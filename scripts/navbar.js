@@ -53,9 +53,10 @@ function enableLightNavbar() {
 
 
 window.addEventListener("scroll", () => {
-    const currentScrollTop = ((window.pageYOffset || document.documentElement.scrollTop) / rootFontSize);
+    const currentScrollTop = (window.scrollY / rootFontSize);
     handleNavbarVisibility(currentScrollTop);
-    if (currentScrollTop > (740 / rootFontSize) && currentScrollTop < (1811 / rootFontSize)) {
+    if (currentScrollTop > (74) && currentScrollTop < (181.1)) {
+        console.log("Dark mode enabled")
         enableDarkNavbar();
     } else {
         enableLightNavbar();
