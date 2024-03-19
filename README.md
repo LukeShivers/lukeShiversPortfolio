@@ -1,9 +1,7 @@
 # Luke Shivers' Portfolio
 
-## The portfolio website of Luke Shivers
-
-Hi! I'm Luke; I am a software engineer and UI/UX designer focused on on 
-building unique technologies for the web, Windows, and Mac operating systems. 
+## Software Engineer, Web Developer, UI/UX Designer
+ 
 The goal of this portfolio website is to showcase my skills and qualifications
 in an elegant single-page format. A blue monochromic, paper-like style was used
 in conjunction with both scroll-based and Lottie animations. All illustrations 
@@ -12,7 +10,7 @@ and my abilities, this portfolio was built with vanilla HTML, CSS, JavaScript ON
 No frameworks or libraries were used! Visit the site: 
 <a href="www.lukeshivers.com">www.lukeshivers.com</a>
 
-<img src="/wwwroot/assets/exampleView.png" alt="Screenshot"/>
+<img src="/assets/exampleView.png" alt="Screenshot"/>
 
 
 ## How to contribute to this project
