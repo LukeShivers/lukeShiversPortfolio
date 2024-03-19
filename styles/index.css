@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/*
+    Black -- 900
+    Extrabold -- 800
+    Bold -- 700
+    Semibold -- 600
+    Medium -- 500
+    Regular -- 400
+    Light -- 300
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Code', monospace;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --light-blue: #214859;
+    --medium-blue: #14303F;
+    --dark-blue: #042530;
+    --blue-green-light: #5891A0;
+    --blue-green-heavy: #31697C;
+    --off-white: #EBECF0;
+    --back-grain: url(assets/back__grain.png);
+}
+
+html {
+    font-size: calc(100vw / 144);
+}

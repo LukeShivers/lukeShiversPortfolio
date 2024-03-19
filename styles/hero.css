@@ -1,0 +1,249 @@
+@import url(/styles/index.css);
+
+
+.mainContainer {
+    overflow: hidden;
+}
+
+.heroContainer {
+    position: relative;
+    display: grid;
+    background-color: var(--medium-blue);
+    grid-template-rows: repeat(4, 18rem);
+    grid-template-columns: repeat(8, 18rem);
+    user-select: none;
+}
+
+.gridDiv {
+    background-color: var(--off-white);
+    /* background-image: var(--back-grain);
+    background-size: 35rem auto; */
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    border: 0.05rem solid var(--medium-blue);
+    transform-style: preserve-3d;
+    transform: perspective(10rem);
+    transition: transform 0.4s cubic-bezier(.03,.98,.52,.99)
+}
+
+.gridDiv h1 {
+    font-size: 30rem;
+    font-weight: 700;
+    color: var(--medium-blue);
+    transform: translateZ(5rem);
+}
+
+.gridDiv .gridText {
+    font-size: 1.2rem;
+    color: var(--medium-blue);
+    opacity: 0;
+    animation: gridTextLoad 0.3s ease-out 4.3s forwards;
+}
+
+@keyframes gridTextLoad {
+    0% {opacity: 0;}
+    100% {opacity: 75%;}
+}
+
+#d2 {
+    position: relative;
+    left: 2rem;
+    bottom: 8rem;
+}
+
+#d3 {
+   position: relative;
+   left: 2rem;
+   bottom: 26.5rem;
+}
+
+
+#e3 {
+    position: relative;
+    left: 4.5rem;
+    bottom: 44rem;
+}
+
+.gridDiv:nth-child(5) .gridText {
+    position: absolute;
+    top: 13rem;
+    right: 1.9rem;
+}
+
+.gridDiv:nth-child(7) {
+    display: flex;
+    justify-content: center;
+}
+
+.gridDiv:nth-child(7) .gridText {
+    position: absolute;
+    top: 6.6rem;
+}
+
+.smoothTransition {
+    transition: 0.3s;
+}
+
+.gridDivSpecial:nth-child(9) {
+    grid-area: 2 / 1 / 4 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--off-white);
+    overflow: hidden;
+    background-size: 35rem auto;
+    border: 0.05rem solid var(--medium-blue);
+    /* background-image: var(--back-grain);
+    background-size: 37rem auto; */
+}
+
+.pageBullets {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.75rem;
+    z-index: 999;
+    transition: all 0.3s ease-out;
+    animation: bulletsLoad 0.5s ease-out 3.8s forwards;
+    opacity: 0;
+    transform: translateX(-3rem);
+}
+
+@keyframes bulletsLoad {
+    0% {transform: translateX(-3rem);}
+    33% {opacity: 0;}
+    100% {transform: translateX(0); opacity: 100;}
+}
+
+.activeBullet {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--medium-blue);
+    rotate: -90deg;
+    border: 0.1rem solid var(--off-white);
+    transition: all 0.3s ease-out;
+}
+
+.non-actBullet {
+    width: 1.1rem;
+    height: 1.1rem;
+    border: 0.1rem solid var(--medium-blue);
+    background-color: var(--off-white);
+    rotate: 45deg;
+    transition: all 0.3s ease-out;
+}
+
+.bullet:hover {
+    scale: 1.3;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#v11 {
+    position: relative;
+    right: 0.5rem;
+    bottom: 7.75rem;
+}
+
+#e12 {
+    position: relative;
+    bottom: 17rem;
+}
+
+#l13 {
+    position: relative;
+    bottom: 9.25rem;
+}
+
+.gridDiv:nth-child(17) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#o20 {
+    position: relative;
+    right: 9rem;
+    bottom: 51.25rem;
+}
+
+#p20 {
+    position: relative;
+    left: 7rem;
+    bottom: 16rem;
+}
+
+#e21 {
+    position: relative;
+    left: 0.5rem;
+    bottom: 4.5rem;
+}
+
+#r22 {
+    position: relative;
+    left: 4rem;
+    bottom: 15rem;
+}
+
+.gridDivSpecial:nth-child(24) {
+    grid-area: 4 / 1 / 5 / 4;
+    display: flex;
+    background-color: var(--medium-blue);
+    overflow: visible;
+}
+
+.gridDiv:nth-child(30) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gridDiv:nth-child(30) .gridText {
+    padding: 0.5rem 1rem 0.5rem;
+}
+
+.heroAlignDiv {
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+    display: flex;
+    justify-content: center;
+}
+
+.heroAlignDiv:nth-child(3) {
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paper__plane {
+    width: 7.6rem;
+    height: 9.8rem;
+}
+
+.accentLine {
+    background-color: var(--off-white);
+    opacity: 25%;
+    width: 0.025rem;
+}
+
+.heroAccent01 {
+    position: absolute;
+    top: 54rem;
+    left: 7rem;
+    height: 128.6rem;
+    z-index: 3;
+}
+
+.heroAccent02 {
+    position: absolute;
+    top: 54rem;
+    left: 18rem;
+    height: 129.6rem;
+    z-index: 3;
+}

@@ -1,0 +1,247 @@
+@import url(/styles/index.css);
+
+.skillsContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80rem;
+    background-color: var(--off-white);
+}
+
+.skillsDiv {
+    position: relative;
+    display: flex;
+    top: 16.45rem;
+    width: 108rem;
+    height: 53.4rem;
+    z-index: 2;
+}
+
+.skillsMenu {
+    position: relative;
+    height: 26rem;
+    top: -2rem;
+    border-top: 2rem solid var(--off-white);
+    border-bottom: 2rem solid var(--off-white);
+}
+
+.skillsMenuSelection {
+    display: flex;
+    position: absolute;
+    cursor: pointer;
+}
+
+.skillsMenuSelectionBar {
+    width: 0.5rem;
+    height: 4.4rem;
+    background-color: var(--medium-blue);
+}
+
+.skillsSelectionBackground {
+    background-color: var(--blue-green-heavy);
+    opacity: 0.25;
+    width: 17.5rem;
+    height: 4.4rem;
+}
+
+.skillsMenuOption {
+    display: flex;
+    cursor: pointer;
+}
+
+.skillsMenuOptionBar {
+    width: 0.5rem;
+    height: 4.4rem;
+    background-color: var(--blue-green-light);
+}
+
+.skillsMenuOptionBackground {
+    display: flex;
+    align-items: center;
+    width: 17.5rem;
+    height: 4.4rem;
+    background-color: var(--off-white);
+}
+
+.skillsMenuOptionTxt {
+    padding-left: 2rem;
+    font-size: 1.4rem;
+    color: var(--medium-blue);
+    font-weight: 400;
+    z-index: 3;
+}
+
+.skillsContent {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 90rem;
+    height: 53.4rem;
+    background-color: var(--medium-blue);
+}
+
+.skillHeadingContainer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    height: 7rem;
+    top: 4.8rem;
+    left: 4rem;
+    background-color: var(--dark-blue);
+}
+
+.skillHeadingText {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    letter-spacing: 0.3rem;
+    color: var(--off-white);
+    transition: all 0.5s ease-out;
+}
+
+.technologyContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 74rem;
+    height: 39.4rem;
+    background-color: var(--blue-green-heavy);
+    outline: 1rem solid var(--dark-blue);
+    margin-top: 9.2rem;
+}
+
+.skillsTechList {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 28.6rem;
+    margin-right: 1.6rem;
+    bottom: 2.1rem;
+}
+
+.skillsIcon {
+    max-height: 2rem;
+    max-width: 2rem;
+}
+
+.techGroup {
+    display: flex;
+    align-items: center;
+    margin: 0.7rem 0;
+}
+
+.iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.6rem;
+    height: 3.6rem;
+    background-color: var(--medium-blue);
+    border-radius: 0.5rem;
+}
+
+
+.techBubble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--medium-blue);
+    border-radius: 1.5rem;
+    margin-left: 0.8rem;
+}
+
+.techText {
+    font-weight: 400;
+    font-size: 1.4rem;
+    letter-spacing: 0.14rem;
+    color: var(--off-white);
+}
+
+.heatLollisContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.heatLolliRow {
+    position: relative;
+    display: flex;
+}
+
+.heat {
+    width: 9.317rem;
+    height: 5rem;
+    border: 0.1rem solid var(--light-blue);
+}
+
+.heat:nth-child(2) {
+    background-color: rgba(235, 236, 240, 0.5);
+}
+
+.heat:nth-child(3) {
+    background-color: rgba(88, 145, 160, 0.5);
+}
+
+.heat:nth-child(4) {
+    background-color: rgba(49, 105, 124, 0.5);
+}
+
+.heat:nth-child(5) {
+    background-color: rgba(33, 72, 89, 0.5);
+}
+
+.heat:nth-child(6) {
+    background-color: rgba(20, 48, 63, 0.5);
+}
+
+.heatLolliColHeaders {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.colHeaderContainer {
+    display: flex;
+    justify-content: center;
+    width: 9.317rem;
+}
+
+.heatLolliColHeader {
+    position: relative;
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 0.14rem;
+    color: var(--off-white);
+}
+
+.lolli {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 1.8rem;
+    left: 1.5rem;
+}
+
+.knowledgeLine {
+    border: none;
+    height: 0.2rem;
+    background-color: var(--off-white);
+    transition: all 0.5s ease-out;
+}
+
+.lolliCircle {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 0.8rem;
+    background-color: var(--off-white);
+}
+
+.lolliUnknown {
+    position: absolute;
+    left: 1.5rem;
+    width: 42.2rem;
+    border: 0.05rem dashed var(--off-white);
+    opacity: 0.5;
+}

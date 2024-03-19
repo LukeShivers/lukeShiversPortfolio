@@ -1,0 +1,147 @@
+@import url(/styles/index.css);
+
+.verticalNav{
+    position: absolute;
+    top: 65rem;
+    left: 18rem;
+    width: 18rem;
+    height: 397.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+#hero {
+    position: absolute;
+    top: -65rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+.heroScrollText {
+    position: absolute;
+    top: 8rem;
+    font-size: 1.6rem;
+    color: var(--off-white);
+    letter-spacing: 0.8rem;
+    transform: scale(0, 0);
+    user-select: none;
+    animation: scrollLoad 0.5s ease-out 4.3s forwards;
+}
+
+@keyframes scrollLoad {
+    0% {transform: scale(0, 0);}
+    100% {transform: scale(1, 1);}
+}
+
+@keyframes scrollBobbing {
+    0% {transform: translate(0, 0);}
+    50% {transform: translate(0, -1rem);}
+    100% {transform: translate(0, 0);}
+}
+
+.scrollLineLight {
+    position: absolute;
+    top: 12.05rem;
+    width: 0.05rem;
+    height: 0;
+    background-color: var(--off-white);
+    z-index: 1;
+    transition: all 0.3s ease-out;
+}
+
+.aboutTextContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 27.775rem;
+    left: 0.025rem;
+    height: 8.2rem;
+    width: 18rem;
+    background-color: var(--medium-blue);
+    border-bottom: 0.025rem solid rgba(235, 236, 240, 0.25);
+    z-index: 2;
+}
+
+.aboutText {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: var(--off-white);
+    opacity: 50%;
+    letter-spacing: 0.5rem;
+}
+
+.aboutLineBlock {
+    position: absolute;
+    top: 36rem;
+    height: 77.4rem;
+    width: 18rem;
+    background-color: var(--medium-blue);
+    z-index: 2;
+}
+
+.scrollLineDark {
+    position: absolute;
+    top: 129.96rem;
+    width: 0.1rem;
+    height: 0;
+    background-color: var(--medium-blue);
+    transition: all 0.3s ease-out;
+}
+
+.workTextContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 142.4rem;
+    height: 8.2rem;
+    width: 18rem;
+    background-color: var(--off-white);
+}
+
+.workText {
+    font-size: 3.2rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    color: var(--medium-blue);
+}
+
+.workLineBlock {
+    position: absolute;
+    top: 160.5rem;
+    height: 118.6rem;
+    width: 18rem;
+    background-color: var(--off-white);
+    z-index: 2;
+}
+
+.skillsTextContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 297.6rem;
+    height: 8.2rem;
+    width: 18rem;
+    background-color: var(--off-white);
+}
+
+.skillsText {
+    font-size: 3.2rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    color: var(--medium-blue);
+}
+
+.contactLine {
+    position: absolute;
+    top: 406.86rem;
+    left: 8.95rem;
+    width: 0;
+    height: 0.1rem;
+    background-color: var(--medium-blue);
+    transition: all 0.3s ease-out;
+}

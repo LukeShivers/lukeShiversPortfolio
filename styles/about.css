@@ -1,0 +1,338 @@
+@import url(/styles/index.css);
+
+.aboutGrid {
+    display: grid;
+    background-color: var(--off-white);
+    grid-template-rows: repeat(1, 18rem);
+    grid-template-columns: repeat(8, 18rem);
+}
+
+.aboutDivSpecial {
+    border-color: rgba(235, 236, 240, 0.25);
+    border-style: solid;
+    border-width: 0.025rem 0.025rem 0.025rem 0rem;
+    display: flex;
+    background-color: var(--medium-blue);
+}
+
+.aboutDivSpecial:first-child {
+    grid-area: 1 / 1 / 1 / 4;
+}
+
+.blueGridDiv {
+    background-color: var(--medium-blue);
+    border: 0.05rem solid var(--off-white);
+}
+
+.aboutDiv {
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+}
+
+.aboutDiv:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.aboutContainer {
+    position: relative;
+    height: 89.8rem;
+    background-color: var(--medium-blue);
+}
+
+.aboutContainer::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 39rem;
+    left: -20rem;
+    width: 200vw;
+    height: 50rem;
+    transform-origin: bottom left;
+    transform: rotate(6deg);
+    background-color: var(--medium-blue);
+    z-index: 1;
+}
+
+.aboutAccent01 {
+    position: absolute;
+    background-color: var(--off-white);
+    opacity: 25%;
+    height: 0.025rem;
+    width: 100%;
+    top: 18rem;
+    z-index: 3;
+}
+
+.aboutAccent02 {
+    position: absolute;
+    background-color: var(--off-white);
+    opacity: 25%;
+    height: 0.025rem;
+    width: 100%;
+    top: 68.4rem;
+    z-index: 3;
+}
+
+.aboutAccent03 {
+    position: absolute;
+    background-color: var(--off-white);
+    opacity: 25%;
+    height: 101rem;
+    width: 0.025rem;
+    left: 90rem;
+    z-index: 3;
+}
+
+.aboutAccent04 {
+    position: absolute;
+    background-color: var(--off-white);
+    opacity: 25%;
+    height: 106rem;
+    width: 0.025rem;
+    left: 137rem;
+    z-index: 3;
+}
+
+.leftColWrapper {
+    position: absolute;
+    width: 67rem;
+    height: 68.4rem;
+    left: 18rem;
+    z-index: 4;
+}
+
+.dottedLine01 {
+    position: absolute;
+    width: 50rem;
+    height: 0.2rem;
+    left: 34.6rem;
+    top: 23.875rem;
+    rotate: 90deg;
+    z-index: 1;
+}
+
+.dottedLine02 {
+    position: absolute;
+    width: 50rem;
+    height: 0.2rem;
+    left: 15.1rem;
+    top: 5.35rem;
+    z-index: 1;
+}
+
+.dottedLine03 {
+    position: absolute;
+    width: 50rem;
+    height: 0.2rem;
+    left: -19.45rem;
+    top: 43.3rem;
+    rotate: 90deg;
+    z-index: 1;
+}
+
+.dottedLine04 {
+    position: absolute;
+    width: 50rem;
+    height: 0.2rem;
+    left: -1.025rem;
+    top: 62.8rem;
+    z-index: 1;
+}
+
+.leftColBackground {
+    position: absolute;
+    width: 53.75rem;
+    height: 57.25rem;
+    background-color: var(--light-blue);
+    top: 8.5rem;
+    left: 8.65rem;
+}
+
+.leftColHi {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--off-white);
+}
+
+.leftColName {
+    position: absolute;
+    top: 9.9rem;
+    left: 3.1rem;
+    font-family: "Poppins", sans-serif;
+    width: fit-content;
+    font-size: 4.8rem;
+    font-weight: 700;
+    letter-spacing: 14%;
+    z-index: 3;
+    color: var(--off-white);
+}
+
+.leftColText {
+    position: absolute;
+    width: 45.4rem;
+    top: 20.5rem;
+    left: 3.1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 150%;
+    z-index: 2;
+    color: var(--off-white);
+}
+
+.highlightLukeShivers {
+    position: absolute;
+    width: 55.9rem;
+    height: 9.4rem;
+    top: 8.8rem;
+    left: -8.625rem;
+    z-index: 2;
+    background-color: var(--dark-blue);
+}
+
+.highlightSoftwareEngineer {
+    position: absolute;
+    width: 17.3rem;
+    height: 2.6rem;
+    top: 20.4rem;
+    left: 9.3rem;
+    opacity: 0;
+    background-color: var(--dark-blue);
+    transition: all 0.6s ease-out;
+}
+
+.highlightUiuxDesigner {
+    position: absolute;
+    width: 14.6rem;
+    height: 2.6rem;
+    top: 20.4rem;
+    left: 30.4rem;
+    background-color: var(--dark-blue);
+    opacity: 0;
+    transition: all 0.6s ease-out;
+}
+
+.highlightUc {
+    position: absolute;
+    width: 23.7rem;
+    height: 2.6rem;
+    top: 31.4rem;
+    left: 21.8rem;
+    background-color: var(--dark-blue);
+    opacity: 0;
+    transition: all 0.6s ease-out;
+}
+
+.rightColWrapper {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 47rem;
+    height: 68.4rem;
+    left: 90rem;
+    z-index: 2;
+}
+
+.aboutSocialMediaContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 26.4rem;
+    top: 10.5rem;
+}
+
+.socialMediaLink {
+    transition: all 0.3s ease-out;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    padding: 1.5rem;
+    border-radius: 20rem;
+}
+
+.socialMediaLink:hover {
+    translate: 0 -0.5rem;
+    background-color: var(--dark-blue);
+}
+
+.aboutLinkedIn {
+    width: 2.5rem;
+    height: 2.6rem;
+}
+
+.aboutGitHub {
+    width: 2.6rem;
+    height: 2.7rem;
+}
+
+.aboutInstagram {
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+.aboutCodepen {
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+.selfPortrait {
+    position: absolute;
+    top: 20.4rem;
+    width: 47rem;
+    height: 48rem;
+    transform-origin: bottom;
+}
+
+.greetingContainer {
+    position: absolute;
+    width: fit-content;
+    top: 5.2rem;
+    left: 3.1rem;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.greetingMask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--light-blue);
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    transition: all 0.5s linear;
+}
+
+.splitTextContainer {
+    position: absolute;
+    width: 45.4rem;
+    top: 20.5rem;
+    left: 3.1rem;
+    z-index: 2;
+}
+
+.splitTextLine {
+    position: relative;
+    overflow: hidden;
+}
+
+.splitP {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--off-white);
+}
+
+.innerDivMask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--light-blue);
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    transition: all 0.5s linear;
+}

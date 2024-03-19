@@ -1,0 +1,27 @@
+@import url(/styles/index.css);
+
+.preloaderContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-blue);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 1000;
+    transition: 1s ease-out;
+}
+
+.planeContainer {
+    position: relative;
+    width: 90rem;
+    height: 50rem;
+}
+
+.loadingText {
+    position: relative;
+    font-size: 1.2rem;
+    color: var(--off-white);
+    letter-spacing: 0.3rem;
+}

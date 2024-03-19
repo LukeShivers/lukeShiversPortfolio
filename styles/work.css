@@ -1,0 +1,211 @@
+@import url(/styles/index.css);
+
+.workDiv {
+    padding-top: 36.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 173.45rem;
+    background-color: var(--off-white);
+}
+
+.snakeImgBkg {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 108.4rem;
+    height: 74rem;
+    background-color: var(--medium-blue);
+    z-index: 3;
+}
+
+.snakeBorder, .snakeXRay, .snakeGamePlay {
+    position: absolute;
+    transition: all 0.3s ease-out;
+}
+
+.snakeXRay, .snakeGamePlay {
+    width: 101.2rem;
+    height: 66.7rem;
+}
+
+.snakeBorder {
+    width: 103.4rem;
+    height: 69rem;
+}
+
+.snakeXRay:hover {
+    opacity: 0;
+}
+
+.snakeOverview {
+    display: flex;
+    justify-content: space-between;
+    width: 108.4rem;
+    padding-top: 3.4rem;
+    z-index: 3;
+}
+
+.aboutWorkContainer {
+    position: relative;
+}
+
+.overviewTxt {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 21rem;
+    height: 5.5rem;
+    background-color: var(--dark-blue);
+    border-radius: 0.8rem;
+    z-index: 2;
+}
+
+.overviewTxt span {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--off-white);
+    padding-left: 2.5rem;
+}
+
+.aboutWork {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 56.2rem;
+    height: 31.8rem;
+    outline: 1rem solid var(--dark-blue);
+    background-color: var(--light-blue);
+    border-radius: 0.8rem;
+    margin-left: 3rem;
+    margin-top: 4.4rem;
+}
+
+.aboutWork p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--off-white);
+    line-height: 150%;
+    width: 47.3rem;
+    padding-top: 3.6rem;
+}
+
+.aboutWorkDivider {
+    height: 0.1rem;
+    width: 49.2rem;
+    background-color: var(--off-white);
+    margin: 2.5rem 0;
+}
+
+.techList {
+    display: flex;
+    flex-wrap: wrap;
+    width: 49.3rem;
+    overflow-wrap: break-word;
+}
+
+.technologyUsed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--medium-blue);
+    border-radius: 1.2rem;
+    margin-right: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.technologyUsed span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--off-white);
+    padding: 0.4rem 1.2rem;
+    white-space: nowrap;
+}
+
+.snakeOverviewRight {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3.2rem;
+}
+
+.workColorPalet {
+    display: flex;
+    position: relative;
+}
+
+.colorSquare {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 2.5rem;
+    transition: all 0.3s ease-out;
+}
+
+.colorSquare:first-child {
+    background-color: var(--dark-blue);
+}
+
+.colorSquare:nth-child(2) {
+    background-color: var(--medium-blue);
+}
+
+.colorSquare:nth-child(3) {
+    background-color: var(--light-blue);
+}
+
+.colorSquare:nth-child(4) {
+    background-color: var(--blue-green-heavy);
+}
+
+.colorSquare:nth-child(5) {
+    background-color: var(--blue-green-light);
+}
+
+.colorSquare:nth-child(6) {
+    background-color: var(--off-white);
+    border: 0.1rem solid var(--medium-blue);
+    margin-right: 0;
+}
+
+.workProjectHeading {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 12rem;
+}
+
+.projectSubheading {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--dark-blue);
+    letter-spacing: 0.2rem;
+}
+
+.projectHeading {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+.goToWork {
+    display: flex;
+    justify-content: end;
+    margin-top: 2rem;
+}
+
+.exitPageIcon {
+    margin-right: 2.5rem;
+}
+
+#exitPageSvg {
+    width: 1.8rem;
+    height: 1.805rem;
+}
+
+#githubWorkIconSvg {
+    width: 1.7rem;
+    height: 1.863rem;
+}
