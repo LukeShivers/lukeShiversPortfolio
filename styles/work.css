@@ -27,7 +27,7 @@
     transition: all 0.3s ease-out;
 }
 
-.snakeXRay, .snakeGamePlay {
+.snakeXRay, .snakeGameplay {
     width: 101.2rem;
     height: 66.7rem;
 }

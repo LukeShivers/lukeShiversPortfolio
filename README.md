@@ -10,8 +10,10 @@ and my abilities, this portfolio was built with vanilla HTML, CSS, JavaScript ON
 No frameworks or libraries were used! Visit the site: 
 <a href="www.lukeshivers.com">www.lukeshivers.com</a>
 
-<img src="/assets/exampleView.png" alt="Screenshot"/>
 
+<a href="www.lukeshivers.com">
+    <img src="/assets/exampleView.png" alt="Screenshot"/>
+</a>
 
 ## How to contribute to this project
 
