@@ -15,15 +15,6 @@
     background-color: var(--medium-blue);
 }
 
-.aboutDivSpecial:first-child {
-    grid-area: 1 / 1 / 1 / 4;
-}
-
-.blueGridDiv {
-    background-color: var(--medium-blue);
-    border: 0.05rem solid var(--off-white);
-}
-
 .aboutDiv {
     position: relative;
     width: 18rem;
@@ -34,6 +25,21 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+}
+
+.aboutDivSpecial:first-child {
+    grid-area: 1 / 1 / 1 / 4;
+}
+
+.blueGridDiv {
+    background-color: var(--medium-blue);
+    border: 0.05rem solid var(--off-white);
+}
+
+@media screen and (max-width: 600px) {
+    .aboutGrid {
+        display: none;
+    }
 }
 
 .aboutContainer {
@@ -96,6 +102,67 @@
     z-index: 3;
 }
 
+@media screen and (max-width: 600px) {
+    .aboutContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        height: 140rem;
+        background-color: var(--medium-blue);
+    }
+
+    .aboutContainer::after {
+        top: 90rem;
+        left: -20rem;
+        width: 200vw;
+        height: 50rem;
+        transform-origin: bottom left;
+        transform: rotate(6deg);
+        background-color: var(--medium-blue);
+        z-index: 1;
+    }
+
+    .aboutAccent01 {
+        top: 16.2rem;
+    }
+
+    .aboutAccent02 {
+        top: 79rem;
+    }
+
+    .aboutAccent03 {
+        height: 141.3rem;
+        left: 2.5rem;
+    }
+    
+    .aboutAccent04 {
+        height: 147.2rem;
+        left: initial;
+        right: 2.5rem;
+    }
+
+    .aboutAccent05 {
+        position: absolute;
+        background-color: var(--off-white);
+        opacity: 25%;
+        height: 0.025rem;
+        width: 100%;
+        top: 91.2rem;
+        z-index: 3;
+    }
+
+    .aboutAccent06 {
+        position: absolute;
+        background-color: var(--off-white);
+        opacity: 25%;
+        height: 0.025rem;
+        width: 100%;
+        top: 126.9rem;
+        z-index: 3;
+    }
+}
+
 .leftColWrapper {
     position: absolute;
     width: 67rem;
@@ -112,6 +179,10 @@
     top: 23.875rem;
     rotate: 90deg;
     z-index: 1;
+}
+
+.mobileDottedLine02 {
+    display: none;
 }
 
 .dottedLine02 {
@@ -133,6 +204,10 @@
     z-index: 1;
 }
 
+.mobileDottedLine04 {
+    display: none;
+}
+
 .dottedLine04 {
     position: absolute;
     width: 50rem;
@@ -149,6 +224,26 @@
     background-color: var(--light-blue);
     top: 8.5rem;
     left: 8.65rem;
+}
+
+.greetingContainer {
+    position: absolute;
+    width: fit-content;
+    top: 5.2rem;
+    left: 3.1rem;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.greetingMask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--light-blue);
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    transition: all 0.5s linear;
 }
 
 .leftColHi {
@@ -180,6 +275,41 @@
     line-height: 150%;
     z-index: 2;
     color: var(--off-white);
+}
+
+#mobileDescription {
+    display: none;
+}
+
+.splitTextContainer {
+    position: absolute;
+    width: 45.4rem;
+    top: 20.5rem;
+    left: 3.1rem;
+    z-index: 2;
+}
+
+.splitTextLine {
+    position: relative;
+    overflow: hidden;
+}
+
+.splitP {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--off-white);
+}
+
+.innerDivMask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--light-blue);
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    transition: all 0.5s linear;
 }
 
 .highlightLukeShivers {
@@ -223,6 +353,146 @@
     background-color: var(--dark-blue);
     opacity: 0;
     transition: all 0.6s ease-out;
+}
+
+@media screen and (max-width: 600px) {
+    .leftColWrapper {
+        display: flex;
+        justify-content: center;
+        top: 16.2rem;
+        width: 39.8rem;
+        height: 62.8rem;
+        left: 0;
+    }
+
+    .dottedLine01 {
+        width: 46.4rem;
+        height: 0.2rem;
+        left: initial;
+        right: -20.5rem;
+        top: 22rem;
+    }
+
+    .mobileDottedLine02 {
+        display: block;
+        position: absolute;
+        right: -1rem;
+        top: 3rem;
+        z-index: 1;
+    }
+    
+    .dottedLine02 {
+        display: none;
+    }
+    
+    .dottedLine03 {
+        width: 46.4rem;
+        height: 0.2rem;
+        left: -20.95rem;
+        top: 39.75rem;
+    }
+
+    .mobileDottedLine04 {
+        display: block;
+        position: absolute;
+        left: -1.25rem;
+        top: 59.7rem;
+        z-index: 1;
+    }
+    
+    .dottedLine04 {
+        display: none;
+    }
+
+    .leftColBackground {
+        position: absolute;
+        width: 34.3rem;
+        height: 53.9rem;
+        background-color: var(--light-blue);
+        top: 4.4rem;
+        left: 2.5rem;
+    }
+
+    .greetingContainer {
+        top: 3rem;
+        left: 2.5rem;
+    }
+
+    .leftColHi {
+        font-size: 1.4rem;
+    }
+
+    .leftColName {
+        top: 7.2rem;
+        left: 2.5rem;
+        font-size: 3.2rem;
+        letter-spacing: 14%;
+    }
+
+    .leftColText {
+        width: 29.3rem;
+        top: 14.1rem;
+        left: 2.5rem;
+        font-size: 1.4rem;
+    }
+
+    #mobileDescription {
+        display: block;
+    }
+
+    #desktopDescription {
+        display: none;
+    }
+    
+    .splitTextContainer {
+        width: 29.3rem;
+        top: 14.1rem;
+        left: 2.5rem;
+    }
+    
+    .splitP {
+        font-size: 1.4rem;
+    }
+
+    .highlightLukeShivers {
+        width: 31rem;
+        height: 6rem;
+        top: 6.6rem;
+        left: -2.5rem;
+    }
+    
+    /* .highlightSoftwareEngineer {
+        width: 17.3rem;
+        height: 2.6rem;
+        top: 20.4rem;
+        left: 9.3rem;
+    }
+    
+    .highlightUiuxDesigner {
+        width: 14.6rem;
+        height: 2.6rem;
+        top: 20.4rem;
+        left: 30.4rem;
+    }
+    
+    .highlightUc {
+        width: 23.7rem;
+        height: 2.6rem;
+        top: 31.4rem;
+        left: 21.8rem;
+    } */
+    
+    .highlightSoftwareEngineer {
+        display: none;
+    }
+    
+    .highlightUiuxDesigner {
+        display: none;
+    }
+    
+    .highlightUc {
+        display: none;
+    }
 }
 
 .rightColWrapper {
@@ -286,53 +556,35 @@
     transform-origin: bottom;
 }
 
-.greetingContainer {
-    position: absolute;
-    width: fit-content;
-    top: 5.2rem;
-    left: 3.1rem;
-    overflow: hidden;
-    z-index: 2;
-}
+@media screen and (max-width: 600px) {
+    .rightColWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 34rem;
+        height: 41.2rem;
+        top: 85.6rem;
+        left: 2.5rem;
+    }
 
-.greetingMask {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: var(--light-blue);
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-    transition: all 0.5s linear;
-}
+    .aboutSocialMediaContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        width: 22.4rem;
+        top: -1rem;
+    }
 
-.splitTextContainer {
-    position: absolute;
-    width: 45.4rem;
-    top: 20.5rem;
-    left: 3.1rem;
-    z-index: 2;
-}
+    .socialMediaLink:hover {
+        translate: initial;
+        background-color: initial;
+    }
 
-.splitTextLine {
-    position: relative;
-    overflow: hidden;
-}
-
-.splitP {
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 150%;
-    color: var(--off-white);
-}
-
-.innerDivMask {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: var(--light-blue);
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-    transition: all 0.5s linear;
+    .selfPortrait {
+        top: 7.8rem;
+        width: 34rem;
+        height: 33.61rem;
+    }
 }

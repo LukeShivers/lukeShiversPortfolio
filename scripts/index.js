@@ -89,7 +89,6 @@ export function setupLoadAnimation (obj) {
     When the desired amount (thresholdValue) of the target element (observedElement) is showing, a css animation 
     (cssAnimationName) is called in the stylesheet the animatedElement is animated with the animation lasting
     the animatedTime amount of time.
-
 */
 export function chooseObserverElement (obj) {
     const targetObjectObserver = new IntersectionObserver(entries => {

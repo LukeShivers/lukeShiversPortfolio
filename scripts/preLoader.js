@@ -7,7 +7,11 @@ const planeContainer = document.querySelector('.planeContainer')
 
 window.addEventListener("load", () => {
     setTimeout(() => {
-        preloaderContainer.style.transform = "translate(500rem, 0)";
+        if (window.innerWidth <= 600) {
+            preloaderContainer.style.transform = "translate(400rem, 0)";
+        } else {
+            preloaderContainer.style.transform = "translate(500rem, 0)";
+        }
     }, 2000);
 });
 

@@ -9,21 +9,12 @@ const l13Text = document.getElementById('l13');
 const o20Text = document.getElementById('o20');
 const p20Text = document.getElementById('p20');
 const e21Text = document.getElementById('e21');
+const e21Copy = document.getElementById('e21Copy')
 const r22Text = document.getElementById('r22');
 
 
 const sectionsArray = Array.from(sections);
 const bulletArray = Array.from(bullet);
-
-
-// Handle change in transition for grid
-window.addEventListener("load", () => {
-    setTimeout(() => {
-        cards.forEach(card => {
-            
-        })
-    }, 2400)
-})
 
 
 cards.forEach(card => {
@@ -166,14 +157,5 @@ heroContentLoadAnimation (l13Text, 'l13LoadAnimation', '4.25s');
 heroContentLoadAnimation (o20Text, 'o20LoadAnimation', '4.31s');
 heroContentLoadAnimation (p20Text, 'p20LoadAnimation', '4.37s');
 heroContentLoadAnimation (e21Text, 'e21LoadAnimation', '4.45s');
+heroContentLoadAnimation (e21Copy, 'e21CopyLoadAnimation', '4.45s');
 heroContentLoadAnimation (r22Text, 'r22LoadAnimation', '4.55s');
-
-
-
-// const paper__airplane = bodymovin.loadAnimation({
-//     container: document.getElementById('airplaneContainer'),
-//     renderer: 'svg',
-//     loop: true,
-//     autoplay: true,
-//     path: 'paper__airplane.json'
-// })

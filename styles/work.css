@@ -41,6 +41,29 @@
     opacity: 0;
 }
 
+@media screen and (max-width: 600px) {
+    .workDiv {
+        height: 146.5rem;
+        padding-top: 0;
+    }
+
+    .snakeImgBkg {
+        margin-top: 45.2rem;
+        width: 34.3rem;
+        height: 23.415rem;
+    }
+
+    .snakeXRay, .snakeGameplay {
+        width: 32.022rem;
+        height: 21.105rem;
+    }
+
+    .snakeBorder {
+        width: 32.67rem;
+        height: 21.754rem;
+    }
+}
+
 .snakeOverview {
     display: flex;
     justify-content: space-between;
@@ -126,6 +149,66 @@
     white-space: nowrap;
 }
 
+@media screen and (max-width: 600px) {
+    .snakeOverview {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 33.9rem;
+        padding-top: 2.5em;
+    }
+
+    .aboutWorkContainer {
+        width: 39.3rem;
+        height: 40.3rem;
+        left: 2.5rem
+    }
+
+    .overviewTxt {
+        width: 16.7rem;
+        height: 4.2rem;
+        border-radius: 0.6rem;
+    }
+    
+    .overviewTxt span {
+        font-size: 2rem;
+        font-weight: 700;
+        padding-left: 2.1rem;
+    }
+    
+    .aboutWork {
+        width: 32.2rem;
+        height: 37.7rem;
+        outline: 0.5rem solid var(--dark-blue);
+        background-color: var(--light-blue);
+        border-radius: 0.6rem;
+        margin-left: 1.7rem;
+        margin-top: 2.6rem;
+    }
+
+    .aboutWork p {
+        font-size: 1.35rem;
+        line-height: 150%;
+        width: 27.4rem;
+        padding-top: 2.9rem;
+    }
+    
+    .aboutWorkDivider {
+        width: 28.2rem;
+    }
+
+    .techList {
+        width: 28.564rem;
+        overflow-wrap: break-word;
+    }
+
+    .technologyUsed span {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+}
+
 .snakeOverviewRight {
     display: flex;
     flex-direction: column;
@@ -208,4 +291,44 @@
 #githubWorkIconSvg {
     width: 1.7rem;
     height: 1.863rem;
+}
+
+@media screen and (max-width: 600px) {
+    .snakeOverviewRight {
+        align-self: flex-end;
+        right: 0;
+        padding-top: 5rem;
+    }
+
+    .workColorPalet {
+        display: none;
+    }
+
+    .workProjectHeading {
+        margin-top: 0;
+    }
+
+    .projectSubheading {
+        font-size: 1.4rem;
+        letter-spacing: 0.14rem;
+    }
+    
+    .projectHeading {
+        font-size: 2.6rem;
+    }
+
+    .goToWork {
+        display: flex;
+        justify-content: end;
+        margin-top: 1.25rem;
+    }
+    
+    .exitPageIcon {
+        display: none;
+    }
+    
+    #githubWorkIconSvg {
+        width: 1.825rem;
+        height: 2rem;
+    }
 }

@@ -9,6 +9,15 @@
     background-color: var(--off-white);
 }
 
+@media screen and (max-width: 600px) {
+    .contactContainer {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 78.1rem;
+    }
+}
+
 .michaelangeloHand {
     display: block;
     position: absolute;
@@ -16,6 +25,12 @@
     right: -5rem;
     width: 46.732rem;
     height: 26.447rem;
+}
+
+@media screen and (max-width: 600px) {
+    .michaelangeloHand {
+        display: none;
+    }
 }
 
 .contactContent {
@@ -83,4 +98,22 @@
     font-size: 1.4rem;
     font-weight: 600;
     color: var(--off-white);
+}
+
+@media screen and (max-width: 600px) {
+    .contactContent {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 33.1rem;
+    }
+
+    .contactBtn {
+        top: 5.6rem;
+    }
+
+    .contactBtn:hover {
+        transform: none;
+    }
 }

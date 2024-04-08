@@ -24,7 +24,9 @@ const options = {
 
 window.addEventListener("load", () => {
     setTimeout(() => {
-        scrollLineLight.style.height = '36rem';
+        if (window.innerWidth >= 600) {
+            scrollLineLight.style.height = '36rem';
+        }
     }, 5000);
 });
 
@@ -41,16 +43,40 @@ const aboutHeadingTextLoad = {
     thresholdValue: 0.1
 }
 setupLoadAnimation (aboutHeadingTextLoad);
-chooseObserverElement (aboutHeadingTextLoad);
+function aboutHeadingIntersectionObserver (obj) {
+    const targetObjectObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.intersectionRatio >= obj.thresholdValue) {
+                    if (window.innerWidth <= 600) {
+                        setTimeout(() => {
+                            scrollLineLight.style.height = '7rem';
+                        }, 250)
+                    }
+                    obj.animatedElement.style.animation = `${obj.cssAnimationName} ${obj.animationTime} ease-out forwards`;
+                    targetObjectObserver.unobserve(entry.target);
+                };
+            })
+        },
+        {
+            threshold: obj.thresholdValue,
+        }
+    );
+    targetObjectObserver.observe(obj.observedElement);
+};
+aboutHeadingIntersectionObserver(aboutHeadingTextLoad)
 
 
-// Scroll Line to Work Load
+
 const toWorkLineLoad = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.intersectionRatio >= 1) {
-            scrollLineLight.style.height = '117.875rem';
+            let lightLength;
+            window.innerWidth <= 600 ? lightLength = '131.75rem' : lightLength = '117.875rem';
+            scrollLineLight.style.height = lightLength;
             setTimeout(() => {
-                scrollLineDark.style.height = '16.45rem';
+                let darkLength;
+                window.innerWidth <= 600 ? darkLength = '30.6rem' : darkLength = '16.45rem';
+                scrollLineDark.style.height = darkLength;
             }, 300);
             toWorkLineLoad.unobserve(entry.target);
         };
@@ -117,7 +143,7 @@ const workOverviewLoad = {
     cssAnimationName: 'workOverviewLoad',
     observedElement: workOverview,
     animationTime: '0.5s',
-    thresholdValue: 1
+    thresholdValue: 0.3
 }
 setupLoadAnimation (workOverviewLoad);
 chooseObserverElement(workOverviewLoad);
@@ -126,7 +152,11 @@ chooseObserverElement(workOverviewLoad);
 const toSkillsLineLoad = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.intersectionRatio >= 1) {
-            scrollLineDark.style.height = '171.74rem';
+            if (window.innerWidth <= 600) {
+                scrollLineDark.style.height = '136.6rem';
+            } else {
+                scrollLineDark.style.height = '171.74rem';
+            }
             toSkillsLineLoad.unobserve(entry.target);
         };
     })
@@ -154,13 +184,19 @@ function skillsCustomIntersectionObserver (obj) {
                     skillsDiv.style.animation = 'skillsSectionLoad 0.5s ease-out forwards';
                 }, 250);
                 setTimeout(() => {
-                    scrollLineDark.style.height = '277rem';
+                    if (window.innerWidth <= 600) {
+                        scrollLineDark.style.height = '148.3rem';
+                    } else {
+                        scrollLineDark.style.height = '277rem';
+                    }
                 }, 500);
                 setTimeout(() => {
-                    contactLine.style.width = '24.9rem';
+                    if (window.innerWidth >= 600) {
+                        contactLine.style.width = '24.9rem';
+                    }
                 }, 750);
                 targetObjectObserver.unobserve(entry.target);
-                };
+            };
         })
     },
     {
@@ -196,6 +232,7 @@ const contactHeadingsLoad = {
     animationTime: '0.3s',
     thresholdValue: 0.6
 }
+
 function contactCustomIntersectionObserver (obj) {
     const targetObjectObserver = new IntersectionObserver(
         entries => {

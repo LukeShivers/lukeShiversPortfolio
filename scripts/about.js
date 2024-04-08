@@ -1,6 +1,7 @@
 import { rootFontSize, navbarButton, arrow, navbar, navbarContainer, symbolSvg, symbolPath, writingSvg, writingPath, navbarLinksText, cards, hoverHereText, hoverHereDiv, bullet, sections, scrollText, styleSheet, aboutLeftColumn, aboutSocialMedia, selfPortrait, skillsMenuSelection, skillsMenuOption, arrayskillsMenuOption, setupLoadAnimation, chooseObserverElement } from './index.js';
 
-const aboutLeftColumnText = document.querySelector('.leftColText');
+const desktopAboutDescription = document.getElementById('desktopDescription');
+const mobileAboutDescription = document.getElementById('mobileDescription')
 const greetingMask = document.querySelector('.greetingMask');
 const highlightSoftware = document.querySelector('.highlightSoftwareEngineer');
 const highlightUiUx = document.querySelector('.highlightUiuxDesigner');
@@ -9,6 +10,7 @@ const newParentDiv = document.createElement('div');
 
 
 let aboutTextLineCounter = 1;
+let breakCounter = 1;
 let newInnerDiv;
 let innerDivMask;
 
@@ -48,22 +50,41 @@ function createSplitMask() {
 
 
 function divideParagraph () {
+    let textContent;
     newParentDiv.classList.add('splitTextContainer');
-    const textContent = aboutLeftColumnText.textContent;
+    if (window.innerWidth <= 600) {
+        textContent = mobileAboutDescription.textContent;
+    } else {
+        textContent = desktopAboutDescription.textContent;
+    }
     const aboutLines = textContent.split('\n');
+    
     aboutLines.forEach((line) => {
         if (line.trim() !== '') {
             createMaskTextContainer();
             createSplitP(line);
             createSplitMask();
-            if (aboutTextLineCounter % 4 === 0) {
-                const lineBreak = document.createElement('br');
-                newParentDiv.appendChild(lineBreak);
-            };
+            if (window.innerWidth <= 600) {
+                if (breakCounter == 6) {
+                    const lineBreak = document.createElement('br');
+                    newParentDiv.appendChild(lineBreak);
+                    breakCounter = 1;
+                };
+                breakCounter++;
+            } else {
+                if (aboutTextLineCounter % 4 === 0) {
+                    const lineBreak = document.createElement('br');
+                    newParentDiv.appendChild(lineBreak);
+                };
+            }
             aboutTextLineCounter++;
         }
     });
-    aboutLeftColumnText.parentNode.replaceChild(newParentDiv, aboutLeftColumnText);
+    if (window.innerWidth <= 600) {
+        mobileAboutDescription.parentNode.replaceChild(newParentDiv, mobileAboutDescription);
+    } else {
+        desktopAboutDescription.parentNode.replaceChild(newParentDiv, desktopAboutDescription);
+    }
 }
 divideParagraph();
 
@@ -73,7 +94,9 @@ async function typeParagraph() {
         for (const entry of entries) {
             if (entry.intersectionRatio >= 0.5) {
                 greetingMask.style.width = '0';
-                for (let i = 1; i < 12; i++) {
+                let numberOfLines;
+                window.innerWidth <= 600 ? numberOfLines = 15 : numberOfLines = 11
+                for (let i = 1; i <= numberOfLines; i++) {
                     await new Promise(resolve => setTimeout(resolve, 500));
                     const lineInFocus = document.getElementById(`aboutLineMask${i}`);
                     lineInFocus.style.width = '0';

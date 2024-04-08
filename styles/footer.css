@@ -14,9 +14,10 @@
 .footerEmail {
     display: flex;
     align-items: center;
-    width: 20rem;
+    width: 21.5rem;
     height: 3rem;
     text-decoration: none;
+    letter-spacing: 0.2rem;
     color: var(--off-white);
     font-size: 1.4rem;
     transition: all 0.3s ease-out;
@@ -52,4 +53,35 @@
 .footerCodepen {
     width: 2.4rem;
     height: 2.4rem;
+}
+
+@media screen and (max-width: 600px) {
+    .footerDiv {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        height: 12.1rem;
+        background-color: var(--medium-blue);
+        padding: 0 8.8rem;
+    }
+
+    .footerSocialMedia {
+        top: 1.6rem;
+        width: 21.555rem;
+    }
+
+    .footerEmail {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: fit-content;
+        height: fit-content;
+        top: 2rem;
+        font-weight: 300;
+    }
+
+    .footerEmail:hover {
+        transform: none;
+    }
 }

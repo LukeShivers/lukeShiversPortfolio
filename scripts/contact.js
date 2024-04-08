@@ -8,14 +8,18 @@ const michaelangeloHand = document.querySelector('.michaelangeloHand');
 
 
 contactBtn.addEventListener('mouseover', () => {
-    contactBtnOutline.style.transform = 'scaleY(1.4) scaleX(1.1)';
-    contactBtnOutline.style.opacity = '1';
+    if (window.innerWidth >= 600) {
+        contactBtnOutline.style.transform = 'scaleY(1.4) scaleX(1.1)';
+        contactBtnOutline.style.opacity = '1';
+    }
 })
 
 
 contactBtn.addEventListener('mouseout', () => {
-    contactBtnOutline.style.transform = 'scaleY(1) scaleX(1)';
-    contactBtnOutline.style.opacity = '0';
+    if (window.innerWidth >= 600) {
+        contactBtnOutline.style.transform = 'scaleY(1) scaleX(1)';
+        contactBtnOutline.style.opacity = '0';
+    }
 })
 
 

@@ -34,3 +34,9 @@
 html {
     font-size: calc(100vw / 144);
 }
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: calc(100vw / 39.3);
+    }
+}

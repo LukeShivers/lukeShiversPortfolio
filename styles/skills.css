@@ -18,6 +18,21 @@
     z-index: 2;
 }
 
+@media screen and (max-width: 600px) {
+    .skillsContainer {
+        height: 55rem;
+    }
+    
+    .skillsDiv {
+        display: flex;
+        flex-direction: column-reverse;
+        top: 0;
+        width: 100%;
+        height: 49rem;
+        padding-top: 5.5rem;
+    }
+}
+
 .skillsMenu {
     position: relative;
     height: 26rem;
@@ -72,6 +87,54 @@
     z-index: 3;
 }
 
+@media screen and (max-width: 600px) {
+    .skillsMenu {
+        display: flex;
+        height: 4rem;
+        top: 3.2rem;
+        left: 3rem;
+        border: none;
+        overflow-x: scroll;
+    }
+
+    .skillsMenuSelection {
+        height: 4rem;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .skillsMenuSelectionBar {
+        width: 14.2rem;
+        height: 0.5rem;
+        z-index: 99;
+    }
+    
+    .skillsSelectionBackground {
+        width: 14.2rem;
+        height: 3.5rem;
+    }
+
+    .skillsMenuOption:nth-child(6) {
+        margin-right: 5rem;
+    }
+
+    .skillsMenuOptionBar {
+        display: none;
+    }
+
+    .skillsMenuOptionBackground {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 14.2rem;
+        height: 3.5rem;
+    }
+
+    .skillsMenuOptionTxt {
+        padding-left: 0;
+    }
+}
+
 .skillsContent {
     display: flex;
     justify-content: center;
@@ -91,6 +154,7 @@
     top: 4.8rem;
     left: 4rem;
     background-color: var(--dark-blue);
+    z-index: 1;
 }
 
 .skillHeadingText {
@@ -102,9 +166,34 @@
     transition: all 0.5s ease-out;
 }
 
+@media screen and (max-width: 600px) {
+    .skillsContent {
+        width: 34.8rem;
+        height: 39.089rem;
+        background-color: initial;
+        left: 2rem;
+    }
+
+    .skillHeadingContainer {
+        width: 16.7rem;
+        height: 4.2rem;
+        top: 0;
+        left: 0;
+        background-color: var(--dark-blue);
+        border-radius: 0.6rem;
+        z-index: 2;
+    }
+
+    .skillHeadingText {
+        font-weight: 700;
+        font-size: 2rem;
+        letter-spacing: 0;
+    }
+}
+
 .technologyContainer {
     display: flex;
-    justify-content: center;
+    position: relative;
     align-items: center;
     width: 74rem;
     height: 39.4rem;
@@ -119,6 +208,7 @@
     flex-direction: column;
     height: 28.6rem;
     margin-right: 1.6rem;
+    left: 4.5rem;
     bottom: 2.1rem;
 }
 
@@ -158,11 +248,62 @@
     font-weight: 400;
     font-size: 1.4rem;
     letter-spacing: 0.14rem;
+    white-space: nowrap;
     color: var(--off-white);
+}
+
+@media screen and (max-width: 600px) {
+    .technologyContainer {
+        position: absolute;
+        top: 2.1rem;
+        left: 1.5rem;
+        width: 33.3rem;
+        height: 36.989rem;
+        outline: 0.5rem solid var(--dark-blue);
+        border-radius: 0.6rem;
+        margin-top: 0;
+    }
+
+    .skillsTechList {
+        margin-right: 1rem;
+        bottom: 0.3rem;
+        left: 1.05rem;
+    }
+
+    .techGroup {
+        position: relative;
+    }
+
+    .techBubble {
+        display: none;
+    }
+
+    .mobileSkillClick {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 0;
+        padding: 0;
+        height: 3.6rem;
+        background-color: var(--medium-blue);
+        border-radius: 0 0.5rem 0.5rem 0;
+        left: 3.6rem;
+        margin-left: -0.5rem;
+        z-index: 1;
+        transition: all 0.3s ease-out;
+    }
+
+    .techText {
+        opacity: 0;
+        transition: all 0.1s ease-out;
+    }
 }
 
 .heatLollisContainer {
     display: flex;
+    position: absolute;
+    right: 4.5rem;
     flex-direction: column;
 }
 
@@ -244,4 +385,30 @@
     width: 42.2rem;
     border: 0.05rem dashed var(--off-white);
     opacity: 0.5;
+}
+
+@media screen and (max-width: 600px) {
+
+    .heatLollisContainer {
+        margin-top: 1.8rem;
+        right: 1.05rem;
+    }
+
+    .heat {
+        width: 5.353rem;
+    }
+
+    .colHeaderContainer {
+        width: 5.353rem;
+    }
+
+    .heatLolliColHeader {
+        font-weight: 400;
+        font-size: 0.6rem;
+        letter-spacing: 0.044rem;
+    }
+
+    .lolliUnknown {
+        width: 23.7rem;
+    }
 }
