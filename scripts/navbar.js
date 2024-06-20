@@ -30,8 +30,12 @@ const navbarMenu = document.querySelector(".navbarMenu");
 const navItem = document.querySelectorAll(".navbarItem");
 
 let lastScrollTop = 0;
+let currentUrl = window.location.href;
 
-if (window.location.href === "https://lukeshivers.com/creative") {
+if (
+  currentUrl.startsWith("https://lukeshivers.com/creative") ||
+  currentUrl.startsWith("http://127.0.0.1:5500/creative")
+) {
   navbarContainer.style.borderBottom = "none";
 }
 
@@ -72,7 +76,10 @@ function handleNavbarVisibility(currentScrollTop) {
 }
 
 function enableDarkNavbar() {
-  if (window.location.href === "https://lukeshivers.com/creative") {
+  if (
+    currentUrl.startsWith("https://lukeshivers.com/creative") ||
+    currentUrl.startsWith("http://127.0.0.1:5500/creative")
+  ) {
     return;
   }
   navbarContainer.classList.add("navbarContainerDark");
@@ -87,7 +94,10 @@ function enableDarkNavbar() {
 }
 
 function enableLightNavbar() {
-  if (window.location.href === "https://lukeshivers.com/creative") {
+  if (
+    currentUrl.startsWith("https://lukeshivers.com/creative") ||
+    currentUrl.startsWith("http://127.0.0.1:5500/creative")
+  ) {
     return;
   }
   navbarContainer.classList.remove("navbarContainerDark");
