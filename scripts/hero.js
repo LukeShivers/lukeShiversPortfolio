@@ -6,6 +6,7 @@ import {
   navbarContainer,
   writingSvg,
   writingPath,
+  navbarMenu,
   navbarLinksText,
   cards,
   hoverHereText,

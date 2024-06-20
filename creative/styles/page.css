@@ -5,6 +5,8 @@ main {
   justify-content: center;
   width: 100%;
   background-color: var(--off-white);
+  padding-bottom: 11rem;
+  min-height: calc(100vh - 21rem);
 }
 
 .gallery {
@@ -20,9 +22,16 @@ main {
 
 .imageContainer {
   position: relative;
+  display: flex;
+  justify-content: center;
   height: 63.9rem;
   overflow: hidden;
   border-radius: 1.25rem;
+  background-color: #eeeeee;
+}
+
+.caliberCase {
+  height: 36.253rem;
 }
 
 .image {
@@ -34,12 +43,19 @@ main {
   border-radius: 1.25rem;
 }
 
-#rrgContainer0,
-#rrgContainer10 {
+.caliberImg {
+  height: 36.253rem;
+}
+
+/* #rrgContainer0,
+#rrgContainer10,
+#rrgContainer14,s
+#rrgContainer18 {
   grid-column: 1 / 3;
 }
 
 #rrgContainer6,
-#rrgContainer16 {
+#rrgContainer13,
+#rrgContainer17 {
   grid-column: 2 / 4;
-}
+} */

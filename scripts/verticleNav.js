@@ -6,6 +6,7 @@ import {
   navbarContainer,
   writingSvg,
   writingPath,
+  navbarMenu,
   navbarLinksText,
   cards,
   hoverHereText,
@@ -23,6 +24,7 @@ import {
   setupLoadAnimation,
   chooseObserverElement,
 } from "./index.js";
+
 import {
   animateContactSubheading,
   animateContactBtn,

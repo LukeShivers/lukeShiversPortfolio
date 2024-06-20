@@ -8,6 +8,7 @@ export const navbar = document.querySelector(".navbar");
 export const navbarContainer = document.querySelector(".navbarContainer");
 export const writingSvg = document.querySelector(".navLogoWriting");
 export const writingPath = writingSvg.querySelector("path");
+export const navbarMenu = document.querySelector(".navbarMenu");
 export const navbarLinksText = document.querySelectorAll(".navbarLinksText");
 export const cards = document.querySelectorAll(".gridDiv");
 export const hoverHereText = document.querySelector(".hoverHereText");

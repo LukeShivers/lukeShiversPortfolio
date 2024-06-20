@@ -66,11 +66,6 @@
   }
 }
 
-.navLogoSymbol {
-  width: 5.9rem;
-  height: 4.9rem;
-}
-
 .navLogoWriting {
   width: 12.1rem;
   height: 2.6rem;
@@ -158,6 +153,14 @@
 
 .navbarItem:nth-child(4) {
   animation: itemLoad 0.5s ease-out 3.4s forwards;
+}
+
+.navbarItem:nth-child(5) {
+  animation: itemLoad 0.5s ease-out 3.5s forwards;
+}
+
+.navbarItem:nth-child(6) {
+  animation: itemLoad 0.5s ease-out 3.6s forwards;
 }
 
 @keyframes itemLoad {

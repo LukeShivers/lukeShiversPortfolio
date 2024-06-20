@@ -6,6 +6,7 @@ import {
   navbarContainer,
   writingSvg,
   writingPath,
+  navbarMenu,
   navbarLinksText,
   cards,
   hoverHereText,
@@ -26,18 +27,10 @@ import {
 
 const mobileMenu = document.getElementById("mobileMenu");
 const mobileMenuBar = document.querySelectorAll(".bar");
-const navbarMenu = document.querySelector(".navbarMenu");
 const navItem = document.querySelectorAll(".navbarItem");
 
 let lastScrollTop = 0;
 let currentUrl = window.location.href;
-
-if (
-  currentUrl.startsWith("https://lukeshivers.com/creative") ||
-  currentUrl.startsWith("http://127.0.0.1:5500/creative")
-) {
-  navbarContainer.style.borderBottom = "none";
-}
 
 mobileMenu.addEventListener("click", () => {
   mobileMenu.classList.toggle("is-active");
@@ -77,7 +70,7 @@ function handleNavbarVisibility(currentScrollTop) {
 
 function enableDarkNavbar() {
   if (
-    currentUrl.startsWith("https://lukeshivers.com/creative") ||
+    currentUrl.startsWith("https://www.lukeshivers.com/creative") ||
     currentUrl.startsWith("http://127.0.0.1:5500/creative")
   ) {
     return;
@@ -95,7 +88,7 @@ function enableDarkNavbar() {
 
 function enableLightNavbar() {
   if (
-    currentUrl.startsWith("https://lukeshivers.com/creative") ||
+    currentUrl.startsWith("https://www.lukeshivers.com/creative") ||
     currentUrl.startsWith("http://127.0.0.1:5500/creative")
   ) {
     return;

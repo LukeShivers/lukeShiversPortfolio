@@ -194,12 +194,22 @@
 /* Logos */
 
 #logosThumbnail {
-  width: 56.6rem;
-  height: 60.036rem;
+  width: 39.592rem;
+  height: auto;
 }
 
 .logosLeftCol {
   margin-right: 10rem;
+}
+
+#logoLink {
+  width: 56.6rem;
+  height: 60.036rem;
+  background-color: #dad7cd;
+  border-radius: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Graduation */
@@ -214,15 +224,16 @@
 }
 
 #gradLandscape {
-  width: auto;
-  height: 58.1rem;
+  width: 87.3rem;
+  height: auto;
   border-radius: 1.25rem;
+  object-fit: cover;
 }
 
 #gradPortrait {
-  margin-left: 4rem;
-  width: auto;
-  height: 58.1rem;
+  margin-left: 4.1rem;
+  width: 38.6rem;
+  height: auto;
   border-radius: 1.25rem;
 }
 

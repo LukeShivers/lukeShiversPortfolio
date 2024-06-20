@@ -24,7 +24,7 @@
 
     <nav class="navbar">
       <div class="navbarContainer">
-        <a href="#" class="navbarLogo">
+        <a href="https://www.lukeshivers.com/creative/" class="navbarLogo">
           <img src="../assets/logoV2.svg" alt="logo" />
           <svg
             class="navLogoWriting"
@@ -47,23 +47,37 @@
         </div>
         <ul class="navbarMenu">
           <li class="navbarItem">
-            <a href="#about" class="navbarLinks">
-              <span data-hover="About" class="navbarLinksText">About</span>
+            <a href="#rrgContainer" class="navbarLinks">
+              <span data-hover="RRG" class="navbarLinksText">RRG</span>
             </a>
           </li>
           <li class="navbarItem">
-            <a href="#work" class="navbarLinks">
-              <span data-hover="Work" class="navbarLinksText">Work</span>
+            <a href="#blueMonoContainer" class="navbarLinks">
+              <span data-hover="Monochrome" class="navbarLinksText"
+                >Monochrome</span
+              >
             </a>
           </li>
           <li class="navbarItem">
-            <a href="#skills" class="navbarLinks">
-              <span data-hover="Skills" class="navbarLinksText">Skills</span>
+            <a href="#logoContainer" class="navbarLinks">
+              <span data-hover="Logos" class="navbarLinksText">Logos</span>
             </a>
           </li>
           <li class="navbarItem">
-            <a href="#contact" class="navbarLinks">
-              <span data-hover="Contact" class="navbarLinksText">Contact</span>
+            <a href="#gradContainer" class="navbarLinks">
+              <span data-hover="Graduation" class="navbarLinksText"
+                >Graduation</span
+              >
+            </a>
+          </li>
+          <li class="navbarItem">
+            <a href="#caliberContainer" class="navbarLinks">
+              <span data-hover="Social" class="navbarLinksText">Social</span>
+            </a>
+          </li>
+          <li class="navbarItem">
+            <a href="#floridaContainer" class="navbarLinks">
+              <span data-hover="Florida" class="navbarLinksText">Florida</span>
             </a>
           </li>
           <a
@@ -100,9 +114,9 @@
     <main class="creativeMain">
       <!-- RRG -->
       <div id="rrgContainer" class="creativeContainer dark column">
-        <a href="page.html" class="creativeLink">
+        <a href="page.html?data=rrg" id="rrgImg" class="creativeLink">
           <img
-            src="https://imagedelivery.net/SnCLT7ibrdYG3cIMHsnf0Q/dbe1e412-66f7-4e44-51b4-9b0749e43500/horizontal"
+            src="https://imagedelivery.net/SnCLT7ibrdYG3cIMHsnf0Q/0e6fa558-00b0-42e7-88b9-5fbc77294700/thumbnail"
             id="rrgThumbnail"
             class="creativeThumbnail"
             alt="Red River Gorge"
@@ -136,10 +150,14 @@
       </div>
 
       <!-- Blue Monochrome -->
-      <div class="creativeContainer dark row">
-        <a href="" class="creativeLink">
+      <div id="blueMonoContainer" class="creativeContainer dark row">
+        <a
+          href="page.html?data=blueMonochrome"
+          id="blueMonoImg"
+          class="creativeLink"
+        >
           <img
-            src="../assets/blueMonochrome/romanHello.svg"
+            src="../assets/blueMonochrome/greekThumbnail.svg"
             id="blueMonoThumbnail"
             class="creativeThumbnail"
             alt="Digital Art"
@@ -202,7 +220,7 @@
       </div>
 
       <!-- Logos -->
-      <div class="creativeContainer dark row">
+      <div id="logoContainer" class="creativeContainer dark row">
         <div class="logosLeftCol">
           <div class="creativeTitle">
             <h1 class="creativeHeading">Make-A-Logo</h1>
@@ -245,26 +263,31 @@
             </div>
           </div>
         </div>
-        <a href="" class="creativeLink">
-          <img
-            src="../assets/logos/logansLandscaping.svg"
-            id="logosThumbnail"
-            class="creativeThumbnail"
-            alt="Logo Design"
-          />
+        <a href="page.html?data=logos" class="creativeLink">
+          <div id="logoLink" class="creativeThumbnail">
+            <img
+              src="../assets/logos/logansLandscaping.svg"
+              id="logosThumbnail"
+              alt="Logo Design"
+            />
+          </div>
         </a>
       </div>
 
       <!-- graduation -->
       <div id="gradContainer" class="dark column">
-        <a href="" id="gradImgContainer" class="creativeLink creativeThumbnail">
+        <a
+          href="page.html?data=graduation"
+          id="gradImgContainer"
+          class="creativeLink creativeThumbnail"
+        >
           <img
-            src="../assets/graduation/g02.jpg"
+            src="https://imagedelivery.net/SnCLT7ibrdYG3cIMHsnf0Q/09c8d614-1e8a-4285-fed8-04ea222abc00/horizontal"
             alt="Graduation Picture"
             id="gradLandscape"
           />
           <img
-            src="../assets/graduation/g03.jpg"
+            src="https://imagedelivery.net/SnCLT7ibrdYG3cIMHsnf0Q/78cc3db4-ec6f-43bb-4c7c-f36f1bd9f800/vertical"
             alt="Graduation Picture"
             id="gradPortrait"
           />
@@ -293,24 +316,28 @@
       <div class="darkSection">
         <!-- caliber -->
         <div id="caliberContainer" class="creativeContainer column light">
-          <a href="" id="caliberGrid" class="creativeLink creativeThumbnail">
+          <a
+            href="page.html?data=caliber"
+            id="caliberGrid"
+            class="creativeLink creativeThumbnail"
+          >
             <img
-              src="../assets/caliber/c01.jpg"
+              src="https://imagedelivery.net/SnCLT7ibrdYG3cIMHsnf0Q/52bb5a9d-1187-461a-24b2-9f4ff4663100/caliber"
               class="caliberThumbnail"
               alt="Graphic"
             />
             <img
-              src="../assets/caliber/c02.jpg"
+              src="https://imagedelivery.net/SnCLT7ibrdYG3cIMHsnf0Q/7ddd5c83-452a-4658-a3d8-dbb6087f9e00/caliber"
               class="caliberThumbnail"
               alt="Graphic"
             />
             <img
-              src="../assets/caliber/c03.jpg"
+              src="https://imagedelivery.net/SnCLT7ibrdYG3cIMHsnf0Q/3e59aea5-eff9-46f7-6762-05e632e88c00/caliber"
               class="caliberThumbnail"
               alt="Graphic"
             />
             <img
-              src="../assets/caliber/c04.jpg"
+              src="https://imagedelivery.net/SnCLT7ibrdYG3cIMHsnf0Q/164a61cd-ce6e-4e7d-b044-51497776f800/caliber"
               class="caliberThumbnail"
               alt="Graphic"
             />
@@ -372,9 +399,9 @@
 
         <!-- florida -->
         <div id="floridaContainer" class="creativeContainer light column">
-          <a href="" class="creativeLink">
+          <a href="page.html?data=florida" class="creativeLink">
             <img
-              src="../assets/florida/f01.jpg"
+              src="https://imagedelivery.net/SnCLT7ibrdYG3cIMHsnf0Q/1372d9db-3438-4bc6-3908-cf5295e4ec00/horizontal"
               id="floridaThumbnail"
               class="creativeThumbnail"
               alt="Beach"
@@ -453,6 +480,8 @@
     <script src="../scripts/index.js" type="module"></script>
     <script src="../scripts/preLoader.js" type="module"></script>
     <script src="../scripts/navbar.js" type="module"></script>
+    <script src="../scripts/about.js" type="module"></script>
     <script src="../scripts/footer.js" type="module"></script>
+    <script src="index.js" type="module"></script>
   </body>
 </html>
