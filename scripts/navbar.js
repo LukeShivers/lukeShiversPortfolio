@@ -31,7 +31,7 @@ const navItem = document.querySelectorAll(".navbarItem");
 
 let lastScrollTop = 0;
 
-if (window.location.href === "http://127.0.0.1:5500/creative/") {
+if (window.location.href === "https://lukeshivers.com/creative") {
   navbarContainer.style.borderBottom = "none";
 }
 
@@ -72,7 +72,7 @@ function handleNavbarVisibility(currentScrollTop) {
 }
 
 function enableDarkNavbar() {
-  if (window.location.href === "http://127.0.0.1:5500/creative/") {
+  if (window.location.href === "https://lukeshivers.com/creative") {
     return;
   }
   navbarContainer.classList.add("navbarContainerDark");
@@ -87,7 +87,7 @@ function enableDarkNavbar() {
 }
 
 function enableLightNavbar() {
-  if (window.location.href === "http://127.0.0.1:5500/creative/") {
+  if (window.location.href === "https://lukeshivers.com/creative") {
     return;
   }
   navbarContainer.classList.remove("navbarContainerDark");
