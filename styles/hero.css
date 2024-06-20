@@ -1,364 +1,381 @@
 @import url(/styles/index.css);
 
-
 .mainContainer {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .heroContainer {
-    position: relative;
-    display: grid;
-    background-color: var(--medium-blue);
-    grid-template-rows: repeat(4, 18rem);
-    grid-template-columns: repeat(8, 18rem);
-    user-select: none;
+  position: relative;
+  display: grid;
+  background-color: var(--medium-blue);
+  grid-template-rows: repeat(4, 18rem);
+  grid-template-columns: repeat(8, 18rem);
+  user-select: none;
 }
 
 .gridDiv {
-    background-color: var(--off-white);
-    /* background-image: var(--back-grain);
+  background-color: var(--off-white);
+  /* background-image: var(--back-grain);
     background-size: 35rem auto; */
-    overflow: hidden;
-    position: relative;
-    overflow: hidden;
-    border: 0.05rem solid var(--medium-blue);
-    transform-style: preserve-3d;
-    transform: perspective(10rem);
-    transition: transform 0.4s cubic-bezier(.03,.98,.52,.99)
+  overflow: hidden;
+  position: relative;
+  overflow: hidden;
+  border: 0.05rem solid var(--medium-blue);
+  transform-style: preserve-3d;
+  transform: perspective(10rem);
+  transition: transform 0.4s cubic-bezier(0.03, 0.98, 0.52, 0.99);
 }
 
 .gridDiv h1 {
-    font-size: 30rem;
-    font-weight: 700;
-    color: var(--medium-blue);
-    transform: translateZ(5rem);
+  font-size: 30rem;
+  font-weight: 700;
+  color: var(--medium-blue);
+  transform: translateZ(5rem);
 }
 
 .gridDiv .gridText {
-    font-size: 1.2rem;
-    color: var(--medium-blue);
-    opacity: 0;
-    animation: gridTextLoad 0.3s ease-out 4.3s forwards;
+  font-size: 1.2rem;
+  color: var(--medium-blue);
+  opacity: 0;
+  animation: gridTextLoad 0.3s ease-out 4.3s forwards;
 }
 
 @keyframes gridTextLoad {
-    0% {opacity: 0;}
-    100% {opacity: 75%;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 75%;
+  }
 }
 
 #d2 {
-    position: relative;
-    left: 2rem;
-    bottom: 8rem;
+  position: relative;
+  left: 2rem;
+  bottom: 8rem;
 }
 
 #d3 {
-   position: relative;
-   left: 2rem;
-   bottom: 26.5rem;
+  position: relative;
+  left: 2rem;
+  bottom: 26.5rem;
 }
 
-
 #e3 {
-    position: relative;
-    left: 4.5rem;
-    bottom: 44rem;
+  position: relative;
+  left: 4.5rem;
+  bottom: 44rem;
 }
 
 .gridDiv:nth-child(5) .gridText {
-    position: absolute;
-    top: 13rem;
-    right: 1.9rem;
+  position: absolute;
+  top: 13rem;
+  right: 1.9rem;
 }
 
 .gridDiv:nth-child(7) {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .gridDiv:nth-child(7) .gridText {
-    position: absolute;
-    top: 6.6rem;
+  position: absolute;
+  top: 6.6rem;
 }
 
 .smoothTransition {
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 .gridDivSpecial:nth-child(9) {
-    grid-area: 2 / 1 / 4 / 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--off-white);
-    overflow: hidden;
-    background-size: 35rem auto;
-    border: 0.05rem solid var(--medium-blue);
-    /* background-image: var(--back-grain);
+  grid-area: 2 / 1 / 4 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--off-white);
+  overflow: hidden;
+  background-size: 35rem auto;
+  border: 0.05rem solid var(--medium-blue);
+  /* background-image: var(--back-grain);
     background-size: 37rem auto; */
 }
 
 .pageBullets {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.75rem;
-    z-index: 999;
-    transition: all 0.3s ease-out;
-    animation: bulletsLoad 0.5s ease-out 3.8s forwards;
-    opacity: 0;
-    transform: translateX(-3rem);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+  z-index: 999;
+  transition: all 0.3s ease-out;
+  animation: bulletsLoad 0.5s ease-out 3.8s forwards;
+  opacity: 0;
+  transform: translateX(-3rem);
 }
 
 @keyframes bulletsLoad {
-    0% {transform: translateX(-3rem);}
-    33% {opacity: 0;}
-    100% {transform: translateX(0); opacity: 100;}
+  0% {
+    transform: translateX(-3rem);
+  }
+  33% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 100;
+  }
 }
 
 .activeBullet {
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: var(--medium-blue);
-    rotate: -90deg;
-    border: 0.1rem solid var(--off-white);
-    transition: all 0.3s ease-out;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--medium-blue);
+  rotate: -90deg;
+  border: 0.1rem solid var(--off-white);
+  transition: all 0.3s ease-out;
 }
 
 .non-actBullet {
-    width: 1.1rem;
-    height: 1.1rem;
-    border: 0.1rem solid var(--medium-blue);
-    background-color: var(--off-white);
-    rotate: 45deg;
-    transition: all 0.3s ease-out;
+  width: 1.1rem;
+  height: 1.1rem;
+  border: 0.1rem solid var(--medium-blue);
+  background-color: var(--off-white);
+  rotate: 45deg;
+  transition: all 0.3s ease-out;
 }
 
 .bullet:hover {
-    scale: 1.3;
-    cursor: pointer;
-    transition: all 0.2s ease;
+  scale: 1.3;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 #v11 {
-    position: relative;
-    right: 0.5rem;
-    bottom: 7.75rem;
+  position: relative;
+  right: 0.5rem;
+  bottom: 7.75rem;
 }
 
 #e12 {
-    position: relative;
-    bottom: 17rem;
+  position: relative;
+  bottom: 17rem;
 }
 
 .mobileDiv {
-    display: none;
+  display: none;
 }
 
 #l13 {
-    position: relative;
-    bottom: 9.25rem;
+  position: relative;
+  bottom: 9.25rem;
 }
 
 #e21Copy {
-    position: relative;
-    left: 0.5rem;
-    bottom: 4.5rem;
+  position: relative;
+  left: 0.5rem;
+  bottom: 4.5rem;
 }
 
 .gridDiv:nth-child(20) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #o20 {
-    position: relative;
-    right: 9rem;
-    bottom: 51.25rem;
+  position: relative;
+  right: 9rem;
+  bottom: 51.25rem;
 }
 
 #p20 {
-    position: relative;
-    left: 7rem;
-    bottom: 16rem;
+  position: relative;
+  left: 7rem;
+  bottom: 16rem;
 }
 
 #e21 {
-    position: relative;
-    left: 0.5rem;
-    bottom: 4.5rem;
+  position: relative;
+  left: 0.5rem;
+  bottom: 4.5rem;
 }
 
 #r22 {
-    position: relative;
-    left: 4rem;
-    bottom: 15rem;
+  position: relative;
+  left: 4rem;
+  bottom: 15rem;
 }
 
 .gridDivSpecial:nth-child(28) {
-    grid-area: 4 / 1 / 4 / 4;
-    display: flex;
-    background-color: var(--medium-blue);
-    overflow: visible;
+  grid-area: 4 / 1 / 4 / 4;
+  display: flex;
+  background-color: var(--medium-blue);
+  overflow: visible;
 }
 
 .gridDiv:nth-child(34) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .gridDiv:nth-child(34) .gridText {
-    padding: 0.5rem 1rem 0.5rem;
+  padding: 0.5rem 1rem 0.5rem;
 }
 
 .heroAlignDiv {
-    position: relative;
-    width: 18rem;
-    height: 18rem;
-    display: flex;
-    justify-content: center;
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+  display: flex;
+  justify-content: center;
 }
 
 .heroAlignDiv:nth-child(3) {
-    position: relative;
-    width: 18rem;
-    height: 18rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .paper__plane {
-    width: 7.6rem;
-    height: 9.8rem;
+  width: 7.6rem;
+  height: 9.8rem;
 }
 
 .accentLine {
-    background-color: var(--off-white);
-    opacity: 25%;
-    width: 0.025rem;
+  background-color: var(--off-white);
+  opacity: 25%;
+  width: 0.025rem;
 }
 
 .heroAccent01 {
-    position: absolute;
-    top: 54rem;
-    left: 7rem;
-    height: 128.6rem;
-    z-index: 3;
+  position: absolute;
+  top: 54rem;
+  left: 7rem;
+  height: 128.6rem;
+  z-index: 3;
 }
 
 .heroAccent02 {
-    position: absolute;
-    top: 54rem;
-    left: 18rem;
-    height: 129.6rem;
-    z-index: 3;
+  position: absolute;
+  top: 54rem;
+  left: 18rem;
+  height: 129.6rem;
+  z-index: 3;
 }
 
 @media screen and (max-width: 600px) {
-    .heroContainer {
-        display: grid;
-        grid-template-rows: repeat(6, 13.1rem);
-        grid-template-columns: repeat(3, 13.1rem);
-    }
+  .heroContainer {
+    display: grid;
+    grid-template-rows: repeat(6, 13.1rem);
+    grid-template-columns: repeat(3, 13.1rem);
+  }
 
-    .gridDiv h1 {
-        font-size: 20rem;
-    }
+  .gridDiv h1 {
+    font-size: 20rem;
+  }
 
-    #d2 {
-        left: 2.3rem;
-        bottom: 5rem;
-    }
-    
-    #d3 {
-       left: 2.3rem;
-       bottom: 17rem;
-    }
-    
-    
-    #e3 {
-        left: 4rem;
-        bottom: 28.25rem;
-    }
+  #d2 {
+    left: 2.4rem;
+    bottom: 5rem;
+  }
 
-    .gridDiv:nth-child(5) .gridText {
-        position: absolute;
-        top: 10rem;
-        right: 1rem;
-    }
+  #d3 {
+    left: 2.3rem;
+    bottom: 17rem;
+  }
 
-    #v11 {
-        right: 0;
-        left: 0.5rem;
-        bottom: 3.75rem;
-    }
+  #e3 {
+    left: 4rem;
+    bottom: 28.25rem;
+  }
 
-    #e12 {
-        bottom: 11.5rem;
-    }
+  .gridDiv:nth-child(5) .gridText {
+    position: absolute;
+    top: 10rem;
+    right: 1rem;
+  }
 
-    #l13 {
-        bottom: 5.75rem;
-    }
+  #v11 {
+    right: 0;
+    left: 0.5rem;
+    bottom: 3.75rem;
+  }
 
-    #e21Copy {
-        position: relative;
-        left: 0.5rem;
-        bottom: 3.5rem;
-    }
+  #e12 {
+    bottom: 11.5rem;
+  }
 
-    #o20 {
-        position: relative;
-        right: 6rem;
-        bottom: 33.75rem;
-    }
-    
-    #p20 {
-        position: relative;
-        left: 5rem;
-        bottom: 11.5rem;
-    }
+  #l13 {
+    bottom: 5.75rem;
+  }
 
-    #r22 {
-        left: 3rem;
-        bottom: 6.5rem;
-    }
+  #e21Copy {
+    position: relative;
+    left: 0.5rem;
+    bottom: 3.5rem;
+  }
 
-    .gridDiv:nth-child(1), .gridDiv:nth-child(4), .gridDiv:nth-child(6), 
-    .gridDiv:nth-child(7), .gridDiv:nth-child(8) {
-        display: none;
-    }
+  #o20 {
+    position: relative;
+    right: 6rem;
+    bottom: 33.75rem;
+  }
 
-    .gridDivSpecial:nth-child(9) {
-        display: none;
-    }
+  #p20 {
+    position: relative;
+    left: 5rem;
+    bottom: 11.5rem;
+  }
 
-    .mobileDiv {
-        display: flex;
-    }
+  #r22 {
+    left: 3rem;
+    bottom: 6.5rem;
+  }
 
-    .gridDiv:nth-child(13) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  .gridDiv:nth-child(1),
+  .gridDiv:nth-child(4),
+  .gridDiv:nth-child(6),
+  .gridDiv:nth-child(7),
+  .gridDiv:nth-child(8) {
+    display: none;
+  }
 
-    .gridDiv:nth-child(17), .gridDiv:nth-child(18), .gridDiv:nth-child(19),
-    .gridDiv:nth-child(20), .gridDiv:nth-child(21), .gridDiv:nth-child(22),
-    .gridDiv:nth-child(24), .gridDiv:nth-child(31), .gridDiv:nth-child(32),
-    .gridDiv:nth-child(33) {
-        display: none;
-    }
+  .gridDivSpecial:nth-child(9) {
+    display: none;
+  }
 
-    .gridDivSpecial:nth-child(28) {
-        display: none;
-    }
+  .mobileDiv {
+    display: flex;
+  }
 
-    .accentLine {
-        display: none;
-    }
+  .gridDiv:nth-child(13) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gridDiv:nth-child(17),
+  .gridDiv:nth-child(18),
+  .gridDiv:nth-child(19),
+  .gridDiv:nth-child(20),
+  .gridDiv:nth-child(21),
+  .gridDiv:nth-child(22),
+  .gridDiv:nth-child(24),
+  .gridDiv:nth-child(31),
+  .gridDiv:nth-child(32),
+  .gridDiv:nth-child(33) {
+    display: none;
+  }
+
+  .gridDivSpecial:nth-child(28) {
+    display: none;
+  }
+
+  .accentLine {
+    display: none;
+  }
 }

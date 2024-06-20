@@ -1,0 +1,44 @@
+@import url(../../styles/index.css);
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.gallery {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1rem;
+  width: 130rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(auto, 63.9rem);
+  overflow: hidden;
+}
+
+.imageContainer {
+  position: relative;
+  height: 63.9rem;
+  overflow: hidden;
+  border-radius: 1.25rem;
+}
+
+.image {
+  position: absolute;
+  height: 63.9rem;
+  min-width: 42.6rem;
+  width: auto;
+  object-fit: cover;
+  border-radius: 1.25rem;
+}
+
+#rrgContainer0,
+#rrgContainer10 {
+  grid-column: 1 / 3;
+}
+
+#rrgContainer6,
+#rrgContainer16 {
+  grid-column: 2 / 4;
+}

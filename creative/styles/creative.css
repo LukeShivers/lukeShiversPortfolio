@@ -1,0 +1,304 @@
+@import url(../../styles/index.css);
+
+.creativeMain {
+  background-color: var(--off-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.light {
+  color: var(--off-white);
+}
+
+.dark {
+  color: var(--medium-blue);
+}
+
+.lightBkg {
+  background-color: var(--off-white);
+}
+
+.darkBkg {
+  background-color: var(--medium-blue);
+}
+
+.creativeContainer {
+  display: flex;
+  margin-bottom: 15rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.creativeLink:hover {
+  cursor: pointer;
+}
+
+.creativeThumbnail {
+  border-radius: 1.25rem;
+  transition: transform 0.3s;
+}
+
+.creativeThumbnail:hover {
+  transform: scale(0.97);
+}
+
+.creativeTitle {
+  width: fit-content;
+}
+
+.creativeSubheading {
+  font-family: "Poppins", monospace;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.creativeHeading {
+  font-family: "Poppins", monospace;
+  font-weight: 700;
+  font-size: 3.2rem;
+}
+
+.creativeDivider {
+  width: 100%;
+  height: 0.1rem;
+  margin: 1.4rem 0 0.7rem 0;
+}
+
+.creativeSkill {
+  font-family: "Poppins", monospace;
+  font-weight: 300;
+  font-size: 2rem;
+  font-style: italic;
+  opacity: 0.75;
+}
+
+.creativePipe {
+  font-style: initial;
+}
+
+.paragraphBkg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 2.5rem;
+  border: solid 1rem var(--dark-blue);
+  margin-top: 3.5rem;
+}
+
+.noBkg {
+  font-family: "Poppins", monospace;
+  font-weight: 300;
+  font-size: 2rem;
+  font-style: italic;
+  opacity: 0.75;
+  margin-top: 4rem;
+}
+
+.hasBkg {
+  font-family: "Poppins", monospace;
+  font-weight: 300;
+  font-size: 2rem;
+  padding: 4.1rem 4.1rem 2.5rem 4.1rem;
+}
+
+.mediumBkg {
+  background-color: var(--light-blue);
+  width: 63.4rem;
+}
+
+.bglBkg {
+  background-color: var(--blue-green-light);
+  width: 59rem;
+}
+
+.techDivider {
+  height: 0.1rem;
+  width: calc(100% - 8.2rem);
+}
+
+.techList {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% - 8.2rem);
+  overflow-wrap: break-word;
+  margin-bottom: 4.1rem;
+  margin-top: 2.5rem;
+}
+
+.technologyUsed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--medium-blue);
+  border-radius: 1.2rem;
+  margin-right: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.technologyUsed span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--off-white);
+  padding: 0.4rem 1.2rem;
+  white-space: nowrap;
+}
+
+.hyperlink {
+  transition: transform 0.3s;
+}
+
+.hyperlink:hover {
+  color: var(--blue-green-light);
+}
+
+/* RRG */
+
+#rrgContainer {
+  width: 119.8rem;
+}
+
+#rrgThumbnail {
+  width: 119.8rem;
+  height: 71.991rem;
+  margin-bottom: 5rem;
+}
+
+/* Blue Monoschrome */
+
+#blueMonoThumbnail {
+  width: 34.157rem;
+  height: 61.644rem;
+}
+
+.blueMonoRightCol {
+  margin-left: 20rem;
+}
+
+.lcs {
+  color: var(--off-white);
+}
+
+/* Logos */
+
+#logosThumbnail {
+  width: 56.6rem;
+  height: 60.036rem;
+}
+
+.logosLeftCol {
+  margin-right: 10rem;
+}
+
+/* Graduation */
+
+#gradContainer {
+  width: 130rem;
+}
+
+#gradImgContainer {
+  display: flex;
+  margin-bottom: 5rem;
+}
+
+#gradLandscape {
+  width: auto;
+  height: 58.1rem;
+  border-radius: 1.25rem;
+}
+
+#gradPortrait {
+  margin-left: 4rem;
+  width: auto;
+  height: 58.1rem;
+  border-radius: 1.25rem;
+}
+
+.darkSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 20rem;
+  height: 260rem;
+  width: 100%;
+  background-color: var(--medium-blue);
+}
+
+.darkSection::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: -20rem;
+  width: 200vw;
+  height: 50rem;
+  transform-origin: top left;
+  transform: rotate(-3deg);
+  background-color: var(--medium-blue);
+  z-index: 1;
+}
+
+/* Caliber Smart */
+
+#caliberGrid {
+  display: grid;
+  gap: 1.8rem;
+  grid-template-columns: repeat(2, 59rem);
+  grid-template-rows: repeat(2, 33.1rem);
+  z-index: 5;
+}
+
+.caliberThumbnail {
+  width: 59rem;
+  border-radius: 1.25rem;
+}
+
+#caliberContainer {
+  margin-top: 8rem;
+  width: 119.8rem;
+  z-index: 3;
+}
+
+.caliberCols {
+  display: flex;
+  justify-content: space-between;
+  width: 119.8rem;
+}
+
+.slc {
+  color: var(--off-white);
+  text-decoration: none;
+  font-family: "Poppins", monospace;
+}
+
+.slcText {
+  transition: transform 0.3s;
+}
+
+.slcText:hover {
+  color: var(--dark-blue);
+}
+
+/* Florida */
+
+#floridaThumbnail {
+  width: 119.8rem;
+  height: auto;
+  margin-bottom: 5rem;
+}
+
+#floridaContainer {
+  width: 119.8rem;
+}

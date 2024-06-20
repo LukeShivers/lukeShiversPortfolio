@@ -1,334 +1,339 @@
 @import url(/styles/index.css);
 
 .workDiv {
-    padding-top: 36.6rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 173.45rem;
-    background-color: var(--off-white);
+  padding-top: 36.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 173.45rem;
+  background-color: var(--off-white);
 }
 
 .snakeImgBkg {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 108.4rem;
-    height: 74rem;
-    background-color: var(--medium-blue);
-    z-index: 3;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 108.4rem;
+  height: 74rem;
+  background-color: var(--medium-blue);
+  z-index: 3;
 }
 
-.snakeBorder, .snakeXRay, .snakeGamePlay {
-    position: absolute;
-    transition: all 0.3s ease-out;
+.snakeBorder,
+.snakeXRay,
+.snakeGamePlay {
+  position: absolute;
+  transition: all 0.3s ease-out;
 }
 
-.snakeXRay, .snakeGameplay {
-    width: 101.2rem;
-    height: 66.7rem;
+.snakeXRay,
+.snakeGameplay {
+  width: 101.2rem;
+  height: 66.7rem;
 }
 
 .snakeBorder {
-    width: 103.4rem;
-    height: 69rem;
+  width: 103.4rem;
+  height: 69rem;
 }
 
 .snakeXRay:hover {
-    opacity: 0;
+  opacity: 0;
 }
 
 @media screen and (max-width: 600px) {
-    .workDiv {
-        height: 146.5rem;
-        padding-top: 0;
-    }
+  .workDiv {
+    height: 146.5rem;
+    padding-top: 0;
+  }
 
-    .snakeImgBkg {
-        margin-top: 45.2rem;
-        width: 34.3rem;
-        height: 23.415rem;
-    }
+  .snakeImgBkg {
+    margin-top: 45.2rem;
+    width: 34.3rem;
+    height: 23.415rem;
+  }
 
-    .snakeXRay, .snakeGameplay {
-        width: 32.022rem;
-        height: 21.105rem;
-    }
+  .snakeXRay,
+  .snakeGameplay {
+    width: 32.022rem;
+    height: 21.105rem;
+  }
 
-    .snakeBorder {
-        width: 32.67rem;
-        height: 21.754rem;
-    }
+  .snakeBorder {
+    width: 32.67rem;
+    height: 21.754rem;
+  }
 }
 
 .snakeOverview {
-    display: flex;
-    justify-content: space-between;
-    width: 108.4rem;
-    padding-top: 3.4rem;
-    z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  width: 108.4rem;
+  padding-top: 3.4rem;
+  z-index: 3;
 }
 
 .aboutWorkContainer {
-    position: relative;
+  position: relative;
 }
 
 .overviewTxt {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    width: 21rem;
-    height: 5.5rem;
-    background-color: var(--dark-blue);
-    border-radius: 0.8rem;
-    z-index: 2;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 21rem;
+  height: 5.5rem;
+  background-color: var(--dark-blue);
+  border-radius: 0.8rem;
+  z-index: 2;
 }
 
 .overviewTxt span {
-    font-size: 2.4rem;
-    font-weight: 700;
-    color: var(--off-white);
-    padding-left: 2.5rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--off-white);
+  padding-left: 2.5rem;
 }
 
 .aboutWork {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 56.2rem;
-    height: 31.8rem;
-    outline: 1rem solid var(--dark-blue);
-    background-color: var(--light-blue);
-    border-radius: 0.8rem;
-    margin-left: 3rem;
-    margin-top: 4.4rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 56.2rem;
+  height: 31.8rem;
+  outline: 1rem solid var(--dark-blue);
+  background-color: var(--light-blue);
+  border-radius: 0.8rem;
+  margin-left: 3rem;
+  margin-top: 4.4rem;
 }
 
 .aboutWork p {
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: var(--off-white);
-    line-height: 150%;
-    width: 47.3rem;
-    padding-top: 3.6rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--off-white);
+  line-height: 150%;
+  width: 47.3rem;
+  padding-top: 3.6rem;
 }
 
 .aboutWorkDivider {
-    height: 0.1rem;
-    width: 49.2rem;
-    background-color: var(--off-white);
-    margin: 2.5rem 0;
+  height: 0.1rem;
+  width: 49.2rem;
+  background-color: var(--off-white);
+  margin: 2.5rem 0;
 }
 
 .techList {
-    display: flex;
-    flex-wrap: wrap;
-    width: 49.3rem;
-    overflow-wrap: break-word;
+  display: flex;
+  flex-wrap: wrap;
+  width: 49.3rem;
+  overflow-wrap: break-word;
 }
 
 .technologyUsed {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--medium-blue);
-    border-radius: 1.2rem;
-    margin-right: 0.4rem;
-    margin-bottom: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--medium-blue);
+  border-radius: 1.2rem;
+  margin-right: 0.4rem;
+  margin-bottom: 0.4rem;
 }
 
 .technologyUsed span {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--off-white);
-    padding: 0.4rem 1.2rem;
-    white-space: nowrap;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--off-white);
+  padding: 0.4rem 1.2rem;
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 600px) {
-    .snakeOverview {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 33.9rem;
-        padding-top: 2.5em;
-    }
+  .snakeOverview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 33.9rem;
+    padding-top: 2.5em;
+  }
 
-    .aboutWorkContainer {
-        width: 39.3rem;
-        height: 40.3rem;
-        left: 2.5rem
-    }
+  .aboutWorkContainer {
+    width: 39.3rem;
+    height: 40.3rem;
+    left: 2.5rem;
+  }
 
-    .overviewTxt {
-        width: 16.7rem;
-        height: 4.2rem;
-        border-radius: 0.6rem;
-    }
-    
-    .overviewTxt span {
-        font-size: 2rem;
-        font-weight: 700;
-        padding-left: 2.1rem;
-    }
-    
-    .aboutWork {
-        width: 32.2rem;
-        height: 37.7rem;
-        outline: 0.5rem solid var(--dark-blue);
-        background-color: var(--light-blue);
-        border-radius: 0.6rem;
-        margin-left: 1.7rem;
-        margin-top: 2.6rem;
-    }
+  .overviewTxt {
+    width: 16.7rem;
+    height: 4.2rem;
+    border-radius: 0.6rem;
+  }
 
-    .aboutWork p {
-        font-size: 1.35rem;
-        line-height: 150%;
-        width: 27.4rem;
-        padding-top: 2.9rem;
-    }
-    
-    .aboutWorkDivider {
-        width: 28.2rem;
-    }
+  .overviewTxt span {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-left: 2.1rem;
+  }
 
-    .techList {
-        width: 28.564rem;
-        overflow-wrap: break-word;
-    }
+  .aboutWork {
+    width: 32.2rem;
+    height: 37.7rem;
+    outline: 0.5rem solid var(--dark-blue);
+    background-color: var(--light-blue);
+    border-radius: 0.6rem;
+    margin-left: 1.7rem;
+    margin-top: 2.6rem;
+  }
 
-    .technologyUsed span {
-        font-size: 1.1rem;
-        font-weight: 600;
-    }
+  .aboutWork p {
+    font-size: 1.35rem;
+    line-height: 150%;
+    width: 27.4rem;
+    padding-top: 2.9rem;
+  }
+
+  .aboutWorkDivider {
+    width: 28.2rem;
+  }
+
+  .techList {
+    width: 28.564rem;
+    overflow-wrap: break-word;
+  }
+
+  .technologyUsed span {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
 }
 
 .snakeOverviewRight {
-    display: flex;
-    flex-direction: column;
-    padding-top: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3.2rem;
 }
 
 .workColorPalet {
-    display: flex;
-    position: relative;
+  display: flex;
+  position: relative;
 }
 
 .colorSquare {
-    width: 5rem;
-    height: 5rem;
-    margin-right: 2.5rem;
-    transition: all 0.3s ease-out;
+  width: 5rem;
+  height: 5rem;
+  margin-right: 2.5rem;
+  transition: all 0.3s ease-out;
 }
 
 .colorSquare:first-child {
-    background-color: var(--dark-blue);
+  background-color: var(--dark-blue);
 }
 
 .colorSquare:nth-child(2) {
-    background-color: var(--medium-blue);
+  background-color: var(--medium-blue);
 }
 
 .colorSquare:nth-child(3) {
-    background-color: var(--light-blue);
+  background-color: var(--light-blue);
 }
 
 .colorSquare:nth-child(4) {
-    background-color: var(--blue-green-heavy);
+  background-color: var(--blue-green-heavy);
 }
 
 .colorSquare:nth-child(5) {
-    background-color: var(--blue-green-light);
+  background-color: var(--blue-green-light);
 }
 
 .colorSquare:nth-child(6) {
-    background-color: var(--off-white);
-    border: 0.1rem solid var(--medium-blue);
-    margin-right: 0;
+  background-color: var(--off-white);
+  border: 0.1rem solid var(--medium-blue);
+  margin-right: 0;
 }
 
 .workProjectHeading {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    margin-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: 12rem;
 }
 
 .projectSubheading {
-    font-size: 2rem;
-    font-weight: 400;
-    color: var(--dark-blue);
-    letter-spacing: 0.2rem;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--dark-blue);
+  letter-spacing: 0.2rem;
 }
 
 .projectHeading {
-    font-size: 4rem;
-    font-weight: 700;
-    color: var(--dark-blue);
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--dark-blue);
 }
 
 .goToWork {
-    display: flex;
-    justify-content: end;
-    margin-top: 2rem;
+  display: flex;
+  justify-content: end;
+  margin-top: 2rem;
 }
 
 .exitPageIcon {
-    margin-right: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 #exitPageSvg {
-    width: 1.8rem;
-    height: 1.805rem;
+  display: none;
+  width: 1.8rem;
+  height: 1.805rem;
 }
 
 #githubWorkIconSvg {
-    width: 1.7rem;
-    height: 1.863rem;
+  width: 1.7rem;
+  height: 1.863rem;
 }
 
 @media screen and (max-width: 600px) {
-    .snakeOverviewRight {
-        align-self: flex-end;
-        right: 0;
-        padding-top: 5rem;
-    }
+  .snakeOverviewRight {
+    align-self: flex-end;
+    right: 0;
+    padding-top: 5rem;
+  }
 
-    .workColorPalet {
-        display: none;
-    }
+  .workColorPalet {
+    display: none;
+  }
 
-    .workProjectHeading {
-        margin-top: 0;
-    }
+  .workProjectHeading {
+    margin-top: 0;
+  }
 
-    .projectSubheading {
-        font-size: 1.4rem;
-        letter-spacing: 0.14rem;
-    }
-    
-    .projectHeading {
-        font-size: 2.6rem;
-    }
+  .projectSubheading {
+    font-size: 1.4rem;
+    letter-spacing: 0.14rem;
+  }
 
-    .goToWork {
-        display: flex;
-        justify-content: end;
-        margin-top: 1.25rem;
-    }
-    
-    .exitPageIcon {
-        display: none;
-    }
-    
-    #githubWorkIconSvg {
-        width: 1.825rem;
-        height: 2rem;
-    }
+  .projectHeading {
+    font-size: 2.6rem;
+  }
+
+  .goToWork {
+    display: flex;
+    justify-content: end;
+    margin-top: 1.25rem;
+  }
+
+  .exitPageIcon {
+    display: none;
+  }
+
+  #githubWorkIconSvg {
+    width: 1.825rem;
+    height: 2rem;
+  }
 }
