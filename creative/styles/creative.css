@@ -8,6 +8,38 @@
   overflow: hidden;
 }
 
+.mobileMessage {
+  display: none;
+}
+
+@media screen and (max-width: 660px) {
+  .creativeMain {
+    display: none;
+  }
+
+  .mobileMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: "Poppins", monospace;
+    margin-top: 17.5rem;
+  }
+
+  .messageHeading {
+    color: var(--medium-blue);
+    font-size: 2.9rem;
+    margin-bottom: 3rem;
+  }
+
+  .messageSubheading {
+    color: var(--medium-blue);
+    font-size: 1.6rem;
+    text-align: center;
+    width: 31.7rem;
+  }
+}
+
 .light {
   color: var(--off-white);
 }
