@@ -20,11 +20,24 @@
   font-size: 1.6rem;
   font-weight: 400;
   color: var(--medium-blue);
-  border-bottom: 0.05rem solid var(--medium-blue);
+  border-bottom: 0.025rem solid var(--medium-blue);
   transition: 0.3s ease-out;
 }
 
 @media screen and (max-width: 600px) {
+  .navbarContainer {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    height: 9.6rem;
+    overflow: visible;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--off-white);
+  }
+}
+
+@media screen and (min-width: 1560px) {
   .navbarContainer {
     position: relative;
     padding: 0;

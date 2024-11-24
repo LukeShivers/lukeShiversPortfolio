@@ -40,3 +40,20 @@ html {
     font-size: calc(100vw / 39.3);
   }
 }
+
+@media screen and (min-width: 1800px) {
+  html {
+    font-size: calc(100vw / 200);
+  }
+}
+
+/* 
+1. Get screen width and divide by 180px
+
+- 0-600 : Mobile view
+- 600-768 : Tablet view
+- 640-1440 : Small desktop
+- 1440-1800: Medium desktop
+- 1800-2160: Large desktop
+- 2160 + : Xl desktop
+*/

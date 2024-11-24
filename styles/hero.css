@@ -5,11 +5,23 @@
 }
 
 .heroContainer {
+  display: flex;
   position: relative;
+}
+
+.heroLeftCol {
   display: grid;
   background-color: var(--medium-blue);
   grid-template-rows: repeat(4, 18rem);
-  grid-template-columns: repeat(8, 18rem);
+  grid-template-columns: repeat(1, 18rem);
+  user-select: none;
+}
+
+.heroRightCol {
+  display: grid;
+  background-color: var(--medium-blue);
+  grid-template-rows: repeat(4, 18rem);
+  grid-template-columns: repeat(7, 18rem);
   user-select: none;
 }
 
@@ -20,7 +32,7 @@
   overflow: hidden;
   position: relative;
   overflow: hidden;
-  border: 0.05rem solid var(--medium-blue);
+  border: 0.025rem solid var(--medium-blue);
   transform-style: preserve-3d;
   transform: perspective(10rem);
   transition: transform 0.4s cubic-bezier(0.03, 0.98, 0.52, 0.99);
@@ -95,7 +107,7 @@
   background-color: var(--off-white);
   overflow: hidden;
   background-size: 35rem auto;
-  border: 0.05rem solid var(--medium-blue);
+  border: 0.025rem solid var(--medium-blue);
   /* background-image: var(--back-grain);
     background-size: 37rem auto; */
 }
