@@ -2,6 +2,8 @@ export let rootFontSize = parseFloat(
   getComputedStyle(document.documentElement).fontSize
 );
 
+console.log(window.innerWidth);
+
 export const navbarButton = document.querySelector(".navbarButton");
 export const arrow = document.querySelector(".buttonArrow");
 export const navbar = document.querySelector(".navbar");

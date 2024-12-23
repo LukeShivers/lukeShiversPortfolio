@@ -1,58 +1,143 @@
 @import url(/styles/index.css);
 
-.aboutGrid {
-    display: grid;
-    background-color: var(--off-white);
-    grid-template-rows: repeat(1, 18rem);
-    grid-template-columns: repeat(8, 18rem);
-}
-
-.aboutDivSpecial {
-    border-color: rgba(235, 236, 240, 0.25);
-    border-style: solid;
-    border-width: 0.025rem 0.025rem 0.025rem 0rem;
-    display: flex;
-    background-color: var(--medium-blue);
-}
-
-.aboutDiv {
-    position: relative;
-    width: 18rem;
-    height: 18rem;
-}
-
-.aboutDiv:nth-child(2) {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.aboutDivSpecial:first-child {
-    grid-area: 1 / 1 / 1 / 4;
-}
-
-.blueGridDiv {
-    background-color: var(--medium-blue);
-    border: 0.05rem solid var(--off-white);
-}
-
-@media screen and (max-width: 600px) {
-    .aboutGrid {
-        display: none;
-    }
-}
-
 .aboutContainer {
-    position: relative;
-    height: 89.8rem;
-    background-color: var(--medium-blue);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 89.8rem;
+  background-color: var(--medium-blue);
 }
 
 .aboutContainer::after {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 39rem;
+  content: "";
+  position: absolute;
+  display: block;
+  top: 39rem;
+  left: -20rem;
+  width: 200vw;
+  height: 50rem;
+  transform-origin: bottom left;
+  transform: rotate(6deg);
+  background-color: var(--medium-blue);
+  z-index: 1;
+}
+
+.aboutGrid {
+  display: flex;
+  background-color: var(--off-white);
+}
+
+.LongAboutDivSpecial {
+  width: 54rem;
+  height: 18rem;
+  background-color: var(--medium-blue);
+}
+
+@media screen and (min-width: 1800px) {
+  .LongAboutDivSpecial {
+    width: 72rem;
+    height: 18rem;
+    background-color: var(--medium-blue);
+  }
+}
+
+.aboutDivSpecial {
+  display: flex;
+  width: 18rem;
+  height: 18rem;
+  border-color: rgba(235, 236, 240, 0.25);
+  border-style: solid;
+  border-width: 0.025rem 0.025rem 0.025rem 0rem;
+  background-color: var(--medium-blue);
+}
+
+.aboutDiv {
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+}
+
+.aboutDiv:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.blueGridDiv {
+  width: 18rem;
+  height: 18rem;
+  background-color: var(--medium-blue);
+  border: 0.05rem solid var(--off-white);
+}
+
+@media screen and (max-width: 600px) {
+  .aboutGrid {
+    display: none;
+  }
+}
+
+.aboutMain {
+  display: flex;
+  position: relative;
+  left: 5.5rem;
+  justify-content: space-between;
+  width: 119.3rem;
+}
+
+.aboutAccent01 {
+  position: absolute;
+  background-color: var(--off-white);
+  opacity: 25%;
+  height: 0.025rem;
+  width: 100%;
+  top: 18rem;
+  z-index: 3;
+}
+
+.aboutAccent02 {
+  position: absolute;
+  background-color: var(--off-white);
+  opacity: 25%;
+  height: 0.025rem;
+  width: 100%;
+  top: 68.4rem;
+  z-index: 3;
+}
+
+.aboutAccent03 {
+  position: absolute;
+  background-color: var(--off-white);
+  opacity: 25%;
+  height: 101rem;
+  width: 0.025rem;
+  left: 90rem;
+  z-index: 3;
+}
+
+.aboutAccent04 {
+  position: absolute;
+  background-color: var(--off-white);
+  opacity: 25%;
+  height: 106rem;
+  width: 0.025rem;
+  left: 137rem;
+  z-index: 3;
+}
+
+@media screen and (max-width: 600px) {
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 140rem;
+    background-color: var(--medium-blue);
+  }
+
+  .aboutContainer::after {
+    top: 90rem;
     left: -20rem;
     width: 200vw;
     height: 50rem;
@@ -60,408 +145,344 @@
     transform: rotate(6deg);
     background-color: var(--medium-blue);
     z-index: 1;
-}
+  }
 
-.aboutAccent01 {
+  .aboutAccent01 {
+    top: 16.2rem;
+  }
+
+  .aboutAccent02 {
+    top: 79rem;
+  }
+
+  .aboutAccent03 {
+    height: 141.3rem;
+    left: 2.5rem;
+  }
+
+  .aboutAccent04 {
+    height: 147.2rem;
+    left: initial;
+    right: 2.5rem;
+  }
+
+  .aboutAccent05 {
     position: absolute;
     background-color: var(--off-white);
     opacity: 25%;
     height: 0.025rem;
     width: 100%;
-    top: 18rem;
+    top: 91.2rem;
     z-index: 3;
-}
+  }
 
-.aboutAccent02 {
+  .aboutAccent06 {
     position: absolute;
     background-color: var(--off-white);
     opacity: 25%;
     height: 0.025rem;
     width: 100%;
-    top: 68.4rem;
+    top: 126.9rem;
     z-index: 3;
-}
-
-.aboutAccent03 {
-    position: absolute;
-    background-color: var(--off-white);
-    opacity: 25%;
-    height: 101rem;
-    width: 0.025rem;
-    left: 90rem;
-    z-index: 3;
-}
-
-.aboutAccent04 {
-    position: absolute;
-    background-color: var(--off-white);
-    opacity: 25%;
-    height: 106rem;
-    width: 0.025rem;
-    left: 137rem;
-    z-index: 3;
-}
-
-@media screen and (max-width: 600px) {
-    .aboutContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        height: 140rem;
-        background-color: var(--medium-blue);
-    }
-
-    .aboutContainer::after {
-        top: 90rem;
-        left: -20rem;
-        width: 200vw;
-        height: 50rem;
-        transform-origin: bottom left;
-        transform: rotate(6deg);
-        background-color: var(--medium-blue);
-        z-index: 1;
-    }
-
-    .aboutAccent01 {
-        top: 16.2rem;
-    }
-
-    .aboutAccent02 {
-        top: 79rem;
-    }
-
-    .aboutAccent03 {
-        height: 141.3rem;
-        left: 2.5rem;
-    }
-    
-    .aboutAccent04 {
-        height: 147.2rem;
-        left: initial;
-        right: 2.5rem;
-    }
-
-    .aboutAccent05 {
-        position: absolute;
-        background-color: var(--off-white);
-        opacity: 25%;
-        height: 0.025rem;
-        width: 100%;
-        top: 91.2rem;
-        z-index: 3;
-    }
-
-    .aboutAccent06 {
-        position: absolute;
-        background-color: var(--off-white);
-        opacity: 25%;
-        height: 0.025rem;
-        width: 100%;
-        top: 126.9rem;
-        z-index: 3;
-    }
+  }
 }
 
 .leftColWrapper {
-    position: absolute;
-    width: 67rem;
-    height: 68.4rem;
-    left: 18rem;
-    z-index: 4;
+  width: 67rem;
+  height: 68.4rem;
+  z-index: 4;
 }
 
 .dottedLine01 {
-    position: absolute;
-    width: 50rem;
-    height: 0.2rem;
-    left: 34.6rem;
-    top: 23.875rem;
-    rotate: 90deg;
-    z-index: 1;
+  width: 50rem;
+  height: 0.2rem;
+  left: 34.6rem;
+  top: 23.875rem;
+  rotate: 90deg;
+  z-index: 1;
 }
 
 .mobileDottedLine02 {
-    display: none;
+  display: none;
 }
 
 .dottedLine02 {
-    position: absolute;
-    width: 50rem;
-    height: 0.2rem;
-    left: 15.1rem;
-    top: 5.35rem;
-    z-index: 1;
+  position: absolute;
+  width: 50rem;
+  height: 0.2rem;
+  left: 15.1rem;
+  top: 5.35rem;
+  z-index: 1;
 }
 
 .dottedLine03 {
-    position: absolute;
-    width: 50rem;
-    height: 0.2rem;
-    left: -19.45rem;
-    top: 43.3rem;
-    rotate: 90deg;
-    z-index: 1;
+  position: absolute;
+  width: 50rem;
+  height: 0.2rem;
+  left: -19.45rem;
+  top: 43.3rem;
+  rotate: 90deg;
+  z-index: 1;
 }
 
 .mobileDottedLine04 {
-    display: none;
+  display: none;
 }
 
 .dottedLine04 {
-    position: absolute;
-    width: 50rem;
-    height: 0.2rem;
-    left: -1.025rem;
-    top: 62.8rem;
-    z-index: 1;
+  position: absolute;
+  width: 50rem;
+  height: 0.2rem;
+  left: -1.025rem;
+  top: 62.8rem;
+  z-index: 1;
 }
 
 .leftColBackground {
-    position: absolute;
-    width: 53.75rem;
-    height: 57.25rem;
-    background-color: var(--light-blue);
-    top: 8.5rem;
-    left: 8.65rem;
+  position: absolute;
+  width: 53.75rem;
+  height: 57.25rem;
+  background-color: var(--light-blue);
+  top: 8.5rem;
+  left: 8.65rem;
 }
 
 .greetingContainer {
-    position: absolute;
-    width: fit-content;
-    top: 5.2rem;
-    left: 3.1rem;
-    overflow: hidden;
-    z-index: 2;
+  position: absolute;
+  width: fit-content;
+  top: 5.2rem;
+  left: 3.1rem;
+  overflow: hidden;
+  z-index: 2;
 }
 
 .greetingMask {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: var(--light-blue);
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-    transition: all 0.5s linear;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--light-blue);
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  transition: all 0.5s linear;
 }
 
 .leftColHi {
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: var(--off-white);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--off-white);
 }
 
 .leftColName {
-    position: absolute;
-    top: 9.9rem;
-    left: 3.1rem;
-    font-family: "Poppins", sans-serif;
-    width: fit-content;
-    font-size: 4.8rem;
-    font-weight: 700;
-    letter-spacing: 14%;
-    z-index: 3;
-    color: var(--off-white);
+  position: absolute;
+  top: 9.9rem;
+  left: 3.1rem;
+  font-family: "Poppins", sans-serif;
+  width: fit-content;
+  font-size: 4.8rem;
+  font-weight: 700;
+  letter-spacing: 14%;
+  z-index: 3;
+  color: var(--off-white);
 }
 
 .leftColText {
-    position: absolute;
-    width: 45.4rem;
-    top: 20.5rem;
-    left: 3.1rem;
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 150%;
-    z-index: 2;
-    color: var(--off-white);
+  position: absolute;
+  width: 45.4rem;
+  top: 20.5rem;
+  left: 3.1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 150%;
+  z-index: 2;
+  color: var(--off-white);
 }
 
 #mobileDescription {
-    display: none;
+  display: none;
 }
 
 .splitTextContainer {
-    position: absolute;
-    width: 45.4rem;
-    top: 20.5rem;
-    left: 3.1rem;
-    z-index: 2;
+  position: absolute;
+  width: 45.4rem;
+  top: 20.5rem;
+  left: 3.1rem;
+  z-index: 2;
 }
 
 .splitTextLine {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .splitP {
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 150%;
-    color: var(--off-white);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--off-white);
 }
 
 .innerDivMask {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: var(--light-blue);
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-    transition: all 0.5s linear;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--light-blue);
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  transition: all 0.5s linear;
 }
 
 .highlightLukeShivers {
-    position: absolute;
-    width: 55.9rem;
-    height: 9.4rem;
-    top: 8.8rem;
-    left: -8.625rem;
-    z-index: 2;
-    background-color: var(--dark-blue);
+  position: absolute;
+  width: 55.9rem;
+  height: 9.4rem;
+  top: 8.8rem;
+  left: -8.625rem;
+  z-index: 2;
+  background-color: var(--dark-blue);
 }
 
 .highlightSoftwareEngineer {
-    position: absolute;
-    width: 17.3rem;
-    height: 2.6rem;
-    top: 20.4rem;
-    left: 9.3rem;
-    opacity: 0;
-    background-color: var(--dark-blue);
-    transition: all 0.6s ease-out;
+  position: absolute;
+  width: 17.3rem;
+  height: 2.6rem;
+  top: 20.4rem;
+  left: 9.3rem;
+  opacity: 0;
+  background-color: var(--dark-blue);
+  transition: all 0.6s ease-out;
 }
 
 .highlightUiuxDesigner {
-    position: absolute;
-    width: 14.6rem;
-    height: 2.6rem;
-    top: 20.4rem;
-    left: 30.4rem;
-    background-color: var(--dark-blue);
-    opacity: 0;
-    transition: all 0.6s ease-out;
+  position: absolute;
+  width: 14.6rem;
+  height: 2.6rem;
+  top: 20.4rem;
+  left: 30.4rem;
+  background-color: var(--dark-blue);
+  opacity: 0;
+  transition: all 0.6s ease-out;
 }
 
 .highlightUc {
-    position: absolute;
-    width: 23.7rem;
-    height: 2.6rem;
-    top: 31.4rem;
-    left: 21.8rem;
-    background-color: var(--dark-blue);
-    opacity: 0;
-    transition: all 0.6s ease-out;
+  position: absolute;
+  width: 23.7rem;
+  height: 2.6rem;
+  top: 31.4rem;
+  left: 21.8rem;
+  background-color: var(--dark-blue);
+  opacity: 0;
+  transition: all 0.6s ease-out;
 }
 
 @media screen and (max-width: 600px) {
-    .leftColWrapper {
-        display: flex;
-        justify-content: center;
-        top: 16.2rem;
-        width: 39.8rem;
-        height: 62.8rem;
-        left: 0;
-    }
+  .leftColWrapper {
+    display: flex;
+    justify-content: center;
+    top: 16.2rem;
+    width: 39.8rem;
+    height: 62.8rem;
+    left: 0;
+  }
 
-    .dottedLine01 {
-        width: 46.4rem;
-        height: 0.2rem;
-        left: initial;
-        right: -20.5rem;
-        top: 22rem;
-    }
+  .dottedLine01 {
+    width: 46.4rem;
+    height: 0.2rem;
+    left: initial;
+    right: -20.5rem;
+    top: 22rem;
+  }
 
-    .mobileDottedLine02 {
-        display: block;
-        position: absolute;
-        right: -1rem;
-        top: 3rem;
-        z-index: 1;
-    }
-    
-    .dottedLine02 {
-        display: none;
-    }
-    
-    .dottedLine03 {
-        width: 46.4rem;
-        height: 0.2rem;
-        left: -20.95rem;
-        top: 39.75rem;
-    }
+  .mobileDottedLine02 {
+    display: block;
+    position: absolute;
+    right: -1rem;
+    top: 3rem;
+    z-index: 1;
+  }
 
-    .mobileDottedLine04 {
-        display: block;
-        position: absolute;
-        left: -1.25rem;
-        top: 59.7rem;
-        z-index: 1;
-    }
-    
-    .dottedLine04 {
-        display: none;
-    }
+  .dottedLine02 {
+    display: none;
+  }
 
-    .leftColBackground {
-        position: absolute;
-        width: 34.3rem;
-        height: 53.9rem;
-        background-color: var(--light-blue);
-        top: 4.4rem;
-        left: 2.5rem;
-    }
+  .dottedLine03 {
+    width: 46.4rem;
+    height: 0.2rem;
+    left: -20.95rem;
+    top: 39.75rem;
+  }
 
-    .greetingContainer {
-        top: 3rem;
-        left: 2.5rem;
-    }
+  .mobileDottedLine04 {
+    display: block;
+    position: absolute;
+    left: -1.25rem;
+    top: 59.7rem;
+    z-index: 1;
+  }
 
-    .leftColHi {
-        font-size: 1.4rem;
-    }
+  .dottedLine04 {
+    display: none;
+  }
 
-    .leftColName {
-        top: 7.2rem;
-        left: 2.5rem;
-        font-size: 3.2rem;
-        letter-spacing: 14%;
-    }
+  .leftColBackground {
+    position: absolute;
+    width: 34.3rem;
+    height: 53.9rem;
+    background-color: var(--light-blue);
+    top: 4.4rem;
+    left: 2.5rem;
+  }
 
-    .leftColText {
-        width: 29.3rem;
-        top: 14.1rem;
-        left: 2.5rem;
-        font-size: 1.4rem;
-    }
+  .greetingContainer {
+    top: 3rem;
+    left: 2.5rem;
+  }
 
-    #mobileDescription {
-        display: block;
-    }
+  .leftColHi {
+    font-size: 1.4rem;
+  }
 
-    #desktopDescription {
-        display: none;
-    }
-    
-    .splitTextContainer {
-        width: 29.3rem;
-        top: 14.1rem;
-        left: 2.5rem;
-    }
-    
-    .splitP {
-        font-size: 1.4rem;
-    }
+  .leftColName {
+    top: 7.2rem;
+    left: 2.5rem;
+    font-size: 3.2rem;
+    letter-spacing: 14%;
+  }
 
-    .highlightLukeShivers {
-        width: 31rem;
-        height: 6rem;
-        top: 6.6rem;
-        left: -2.5rem;
-    }
-    
-    /* .highlightSoftwareEngineer {
+  .leftColText {
+    width: 29.3rem;
+    top: 14.1rem;
+    left: 2.5rem;
+    font-size: 1.4rem;
+  }
+
+  #mobileDescription {
+    display: block;
+  }
+
+  #desktopDescription {
+    display: none;
+  }
+
+  .splitTextContainer {
+    width: 29.3rem;
+    top: 14.1rem;
+    left: 2.5rem;
+  }
+
+  .splitP {
+    font-size: 1.4rem;
+  }
+
+  .highlightLukeShivers {
+    width: 31rem;
+    height: 6rem;
+    top: 6.6rem;
+    left: -2.5rem;
+  }
+
+  /* .highlightSoftwareEngineer {
         width: 17.3rem;
         height: 2.6rem;
         top: 20.4rem;
@@ -481,110 +502,108 @@
         top: 31.4rem;
         left: 21.8rem;
     } */
-    
-    .highlightSoftwareEngineer {
-        display: none;
-    }
-    
-    .highlightUiuxDesigner {
-        display: none;
-    }
-    
-    .highlightUc {
-        display: none;
-    }
+
+  .highlightSoftwareEngineer {
+    display: none;
+  }
+
+  .highlightUiuxDesigner {
+    display: none;
+  }
+
+  .highlightUc {
+    display: none;
+  }
 }
 
 .rightColWrapper {
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 47rem;
-    height: 68.4rem;
-    left: 90rem;
-    z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 47rem;
+  height: 68.4rem;
+  z-index: 2;
 }
 
 .aboutSocialMediaContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  width: 26.4rem;
+  top: 10.5rem;
+}
+
+.socialMediaLink {
+  transition: all 0.3s ease-out;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  padding: 1.5rem;
+  border-radius: 20rem;
+}
+
+.socialMediaLink:hover {
+  translate: 0 -0.5rem;
+  background-color: var(--dark-blue);
+}
+
+.aboutLinkedIn {
+  width: 2.5rem;
+  height: 2.6rem;
+}
+
+.aboutGitHub {
+  width: 2.6rem;
+  height: 2.7rem;
+}
+
+.aboutInstagram {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.aboutCodepen {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.selfPortrait {
+  position: absolute;
+  top: 20.4rem;
+  width: 47rem;
+  height: 48rem;
+  transform-origin: bottom;
+}
+
+@media screen and (max-width: 600px) {
+  .rightColWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 34rem;
+    height: 41.2rem;
+    top: 85.6rem;
+    left: 2.5rem;
+  }
+
+  .aboutSocialMediaContainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: absolute;
-    width: 26.4rem;
-    top: 10.5rem;
-}
+    width: 22.4rem;
+    top: -1rem;
+  }
 
-.socialMediaLink {
-    transition: all 0.3s ease-out;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    padding: 1.5rem;
-    border-radius: 20rem;
-}
+  .socialMediaLink:hover {
+    translate: initial;
+    background-color: initial;
+  }
 
-.socialMediaLink:hover {
-    translate: 0 -0.5rem;
-    background-color: var(--dark-blue);
-}
-
-.aboutLinkedIn {
-    width: 2.5rem;
-    height: 2.6rem;
-}
-
-.aboutGitHub {
-    width: 2.6rem;
-    height: 2.7rem;
-}
-
-.aboutInstagram {
-    width: 2.8rem;
-    height: 2.8rem;
-}
-
-.aboutCodepen {
-    width: 2.8rem;
-    height: 2.8rem;
-}
-
-.selfPortrait {
-    position: absolute;
-    top: 20.4rem;
-    width: 47rem;
-    height: 48rem;
-    transform-origin: bottom;
-}
-
-@media screen and (max-width: 600px) {
-    .rightColWrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        width: 34rem;
-        height: 41.2rem;
-        top: 85.6rem;
-        left: 2.5rem;
-    }
-
-    .aboutSocialMediaContainer {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: absolute;
-        width: 22.4rem;
-        top: -1rem;
-    }
-
-    .socialMediaLink:hover {
-        translate: initial;
-        background-color: initial;
-    }
-
-    .selfPortrait {
-        top: 7.8rem;
-        width: 34rem;
-        height: 33.61rem;
-    }
+  .selfPortrait {
+    top: 7.8rem;
+    width: 34rem;
+    height: 33.61rem;
+  }
 }

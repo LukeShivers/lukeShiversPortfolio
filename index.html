@@ -29,25 +29,27 @@
       <span class="loadingText">Loading...</span>
     </div>
 
-    <div class="verticalNav">
-      <div class="section" id="hero"></div>
-      <span class="heroScrollText">Scroll</span>
+    <div class="verticalNavContainer">
+      <div class="verticalNav">
+        <div class="section" id="hero"></div>
+        <span class="heroScrollText">Scroll</span>
 
-      <div class="scrollLineLight"></div>
-      <div class="aboutTextContainer section" id="about">
-        <span class="about aboutText">ABOUT</span>
-      </div>
-      <div class="aboutLineBlock"></div>
+        <div class="scrollLineLight"></div>
+        <div class="aboutTextContainer section" id="about">
+          <span class="about aboutText">ABOUT</span>
+        </div>
+        <div class="aboutLineBlock"></div>
 
-      <div class="scrollLineDark"></div>
-      <div class="workTextContainer section" id="work">
-        <span class="work workText">WORK</span>
+        <div class="scrollLineDark"></div>
+        <div class="workTextContainer section" id="work">
+          <span class="work workText">WORK</span>
+        </div>
+        <div class="workLineBlock"></div>
+        <div class="skillsTextContainer section" id="skills">
+          <span class="skills skillsText">SKILLS</span>
+        </div>
+        <div class="contactLine section" id="contact"></div>
       </div>
-      <div class="workLineBlock"></div>
-      <div class="skillsTextContainer section" id="skills">
-        <span class="skills skillsText">SKILLS</span>
-      </div>
-      <div class="contactLine section" id="contact"></div>
     </div>
 
     <nav class="navbar">
@@ -127,11 +129,9 @@
 
     <main class="mainContainer">
       <div class="heroContainer">
-        <div class="heroLeftCol">
-          <div class="gridDiv"></div>
-          <div class="gridDiv"></div>
-          <div class="gridDiv"></div>
-          <div class="gridDivSpecial">
+        <div class="heroLeft">
+          <div class="gridDiv xlDiv"></div>
+          <div class="bulletContainer">
             <div class="pageBullets">
               <a href="#hero" class="bullet activeBullet"></a>
               <a href="#about" class="bullet non-actBullet"></a>
@@ -141,7 +141,17 @@
             </div>
           </div>
         </div>
-        <div class="heroRightCol">
+        <div class="xlAdjustmentDivContainer">
+          <div class="gridDiv xlDiv"></div>
+          <div class="gridDiv xlDiv"></div>
+          <div class="gridDiv xlDiv"></div>
+        </div>
+        <div class="lgAdjustmentDivContainer">
+          <div class="gridDiv xlDiv"></div>
+          <div class="gridDiv xlDiv"></div>
+          <div class="gridDiv xlDiv"></div>
+        </div>
+        <div class="developer">
           <div class="gridDiv">
             <h1 id="d2">d</h1>
           </div>
@@ -200,7 +210,6 @@
           <div class="gridDivSpecial">
             <div class="heroAlignDiv"></div>
             <div class="heroAlignDiv"></div>
-            <div class="heroAlignDiv" id="airplaneContainer"></div>
           </div>
           <div class="accentLine heroAccent01"></div>
           <div class="accentLine heroAccent02"></div>
@@ -213,226 +222,241 @@
           </div>
           <div class="gridDiv"></div>
         </div>
-      </div>
-
-      <div class="aboutGrid">
-        <div class="aboutDivSpecial">
-          <div class="aboutDiv"></div>
-          <div class="aboutDiv"></div>
-          <div class="aboutDiv"></div>
+        <div class="lgAdjustmentDivContainer">
+          <div class="gridDiv xlDiv"></div>
+          <div class="gridDiv xlDiv"></div>
+          <div class="gridDiv xlDiv"></div>
+          <div class="gridDiv xlDiv"></div>
         </div>
-        <div class="aboutDivSpecial"></div>
-        <div class="aboutDivSpecial"></div>
-        <div class="blueGridDiv"></div>
-        <div class="blueGridDiv"></div>
-        <div class="blueGridDiv"></div>
+        <div class="xlAdjustmentDivContainer">
+          <div class="gridDiv xlDiv"></div>
+          <div class="gridDiv xlDiv"></div>
+          <div class="gridDiv xlDiv"></div>
+          <div class="gridDiv xlDiv"></div>
+        </div>
       </div>
       <div class="aboutContainer">
-        <div class="leftColWrapper">
-          <svg
-            class="dottedLine01"
-            width="500"
-            height="2"
-            viewBox="0 0 500 2"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <line
-              x1="500"
-              y1="1"
-              x2="-8.74228e-08"
-              y2="0.999956"
-              stroke="#EBECF0"
-              stroke-width="2"
-              stroke-dasharray="10 10"
-            />
-          </svg>
-          <svg
-            class="mobileDottedLine02"
-            width="232"
-            height="2"
-            viewBox="0 0 232 2"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <line
-              x1="8.74228e-08"
-              y1="1"
-              x2="235"
-              y2="1.00002"
-              stroke="#EBECF0"
-              stroke-width="2"
-              stroke-dasharray="10 10"
-            />
-          </svg>
-          <svg
-            class="dottedLine02"
-            width="500"
-            height="2"
-            viewBox="0 0 500 2"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <line
-              x1="500"
-              y1="1"
-              x2="-8.74228e-08"
-              y2="0.999956"
-              stroke="#EBECF0"
-              stroke-width="2"
-              stroke-dasharray="10 10"
-            />
-          </svg>
-          <svg
-            class="dottedLine03"
-            width="500"
-            height="2"
-            viewBox="0 0 500 2"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <line
-              x1="500"
-              y1="1"
-              x2="-8.74228e-08"
-              y2="0.999956"
-              stroke="#EBECF0"
-              stroke-width="2"
-              stroke-dasharray="10 10"
-            />
-          </svg>
-          <svg
-            class="mobileDottedLine04"
-            width="232"
-            height="2"
-            viewBox="0 0 232 2"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <line
-              x1="8.74228e-08"
-              y1="1"
-              x2="235"
-              y2="1.00002"
-              stroke="#EBECF0"
-              stroke-width="2"
-              stroke-dasharray="10 10"
-            />
-          </svg>
-          <svg
-            class="dottedLine04"
-            width="500"
-            height="2"
-            viewBox="0 0 500 2"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <line
-              x1="500"
-              y1="1"
-              x2="-8.74228e-08"
-              y2="0.999956"
-              stroke="#EBECF0"
-              stroke-width="2"
-              stroke-dasharray="10 10"
-            />
-          </svg>
-          <div class="leftColBackground">
-            <div class="highlightLukeShivers"></div>
-            <div class="highlightSoftwareEngineer"></div>
-            <div class="highlightUiuxDesigner"></div>
-            <div class="highlightUc"></div>
-            <div class="greetingContainer">
-              <p class="leftColHi">Hi, my name is</p>
-              <div class="greetingMask"></div>
-            </div>
-            <h1 class="leftColName">Luke Shivers</h1>
-            <!-- prettier-ignore -->
-            <p class="leftColText" id="desktopDescription">
-              I am a software engineer and UI/UX designer 
-              specializing in creating unique technologies.
-              I’ve been building on the web since 2019 with 
-              an emphasis on standing out from the crowd.
-              <br><br>
-              Graduating from the University of Cincinnati
-              with a degree in Information Systems gave me a 
-              base knowledge of the programming world. The 
-              rest is self-taught! 
-              <br><br>
-              These days, I continue to build new online 
-              infrastructure and contribute to the open
-              source community! #happyProgramming
-            </p>
-            <!-- prettier-ignore -->
-            <p class="leftColText" id="mobileDescription">
-              I am a software engineer and UI/UX 
-              designer specializing in creating 
-              unique technologies. I’ve been 
-              building on the web since 2019 
-              with an emphasis on standing out 
-              from the crowd.
-              <br><br>
-              Graduating from the University of 
-              Cincinnati with a degree in 
-              Information Systems gave me a base 
-              knowledge of the programming 
-              world. The rest is self-taught! 
-              <br><br>
-              These days, I continue to build 
-              new online infrastructure and 
-              contribute to the open source 
-              community! #happyProgramming
-            </p>
+        <div class="aboutGrid">
+          <div class="LongAboutDivSpecial">
+            <div class="aboutDiv"></div>
+            <div class="aboutDiv"></div>
+            <div class="aboutDiv"></div>
           </div>
+          <div class="aboutDivSpecial"></div>
+          <div class="aboutDivSpecial"></div>
+          <div class="blueGridDiv"></div>
+          <div class="blueGridDiv"></div>
+          <div class="blueGridDiv"></div>
+          <div class="blueGridDiv lgBlueGridDiv"></div>
+          <div class="blueGridDiv xlBlueGridDiv"></div>
         </div>
-        <div class="rightColWrapper">
-          <div class="aboutSocialMediaContainer">
-            <a
-              href="https://www.linkedin.com/in/luke-shivers/"
-              target="_blank"
-              class="socialMediaLink"
+        <div class="aboutMain">
+          <div class="leftColWrapper">
+            <svg
+              class="dottedLine01"
+              width="500"
+              height="2"
+              viewBox="0 0 500 2"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <img
-                src="assets/Linkedin.svg"
-                class="aboutLinkedIn"
-                alt="LinkedIn"
+              <line
+                x1="500"
+                y1="1"
+                x2="-8.74228e-08"
+                y2="0.999956"
+                stroke="#EBECF0"
+                stroke-width="2"
+                stroke-dasharray="10 10"
               />
-            </a>
-            <a
-              href="https://github.com/LukeShivers"
-              target="_blank"
-              class="socialMediaLink"
+            </svg>
+            <svg
+              class="mobileDottedLine02"
+              width="232"
+              height="2"
+              viewBox="0 0 232 2"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <img src="assets/Github.svg" class="aboutGitHub" alt="GitHub" />
-            </a>
-            <a
-              href="https://www.instagram.com/luke_shivers/"
-              target="_blank"
-              class="socialMediaLink"
-            >
-              <img
-                src="assets/Instagram.svg"
-                class="aboutInstagram"
-                alt="Instagram"
+              <line
+                x1="8.74228e-08"
+                y1="1"
+                x2="235"
+                y2="1.00002"
+                stroke="#EBECF0"
+                stroke-width="2"
+                stroke-dasharray="10 10"
               />
-            </a>
-            <a
-              href="https://codepen.io/Luke-Shivers"
-              target="_blank"
-              class="socialMediaLink"
+            </svg>
+            <svg
+              class="dottedLine02"
+              width="500"
+              height="2"
+              viewBox="0 0 500 2"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <img
-                src="assets/Codepen.svg"
-                class="aboutCodepen"
-                alt="Codepen"
+              <line
+                x1="500"
+                y1="1"
+                x2="-8.74228e-08"
+                y2="0.999956"
+                stroke="#EBECF0"
+                stroke-width="2"
+                stroke-dasharray="10 10"
               />
-            </a>
+            </svg>
+            <svg
+              class="dottedLine03"
+              width="500"
+              height="2"
+              viewBox="0 0 500 2"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="500"
+                y1="1"
+                x2="-8.74228e-08"
+                y2="0.999956"
+                stroke="#EBECF0"
+                stroke-width="2"
+                stroke-dasharray="10 10"
+              />
+            </svg>
+            <svg
+              class="mobileDottedLine04"
+              width="232"
+              height="2"
+              viewBox="0 0 232 2"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="8.74228e-08"
+                y1="1"
+                x2="235"
+                y2="1.00002"
+                stroke="#EBECF0"
+                stroke-width="2"
+                stroke-dasharray="10 10"
+              />
+            </svg>
+            <svg
+              class="dottedLine04"
+              width="500"
+              height="2"
+              viewBox="0 0 500 2"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="500"
+                y1="1"
+                x2="-8.74228e-08"
+                y2="0.999956"
+                stroke="#EBECF0"
+                stroke-width="2"
+                stroke-dasharray="10 10"
+              />
+            </svg>
+            <div class="leftColBackground">
+              <div class="highlightLukeShivers"></div>
+              <div class="highlightSoftwareEngineer"></div>
+              <div class="highlightUiuxDesigner"></div>
+              <div class="highlightUc"></div>
+              <div class="greetingContainer">
+                <p class="leftColHi">Hi, my name is</p>
+                <div class="greetingMask"></div>
+              </div>
+              <h1 class="leftColName">Luke Shivers</h1>
+              <!-- prettier-ignore -->
+              <p class="leftColText" id="desktopDescription">
+                I am a software engineer and UI/UX designer 
+                specializing in creating unique technologies.
+                I’ve been building on the web since 2019 with 
+                an emphasis on standing out from the crowd.
+                <br><br>
+                Graduating from the University of Cincinnati
+                with a degree in Information Systems gave me a 
+                base knowledge of the programming world. The 
+                rest is self-taught! 
+                <br><br>
+                These days, I continue to build new online 
+                infrastructure and contribute to the open
+                source community! #happyProgramming
+              </p>
+              <!-- prettier-ignore -->
+              <p class="leftColText" id="mobileDescription">
+                I am a software engineer and UI/UX 
+                designer specializing in creating 
+                unique technologies. I’ve been 
+                building on the web since 2019 
+                with an emphasis on standing out 
+                from the crowd.
+                <br><br>
+                Graduating from the University of 
+                Cincinnati with a degree in 
+                Information Systems gave me a base 
+                knowledge of the programming 
+                world. The rest is self-taught! 
+                <br><br>
+                These days, I continue to build 
+                new online infrastructure and 
+                contribute to the open source 
+                community! #happyProgramming
+              </p>
+            </div>
           </div>
-          <img
-            class="selfPortrait"
-            src="assets/self_portrait.svg"
-            alt="self portrait"
-          />
+          <div class="rightColWrapper">
+            <div class="aboutSocialMediaContainer">
+              <a
+                href="https://www.linkedin.com/in/luke-shivers/"
+                target="_blank"
+                class="socialMediaLink"
+              >
+                <img
+                  src="assets/Linkedin.svg"
+                  class="aboutLinkedIn"
+                  alt="LinkedIn"
+                />
+              </a>
+              <a
+                href="https://github.com/LukeShivers"
+                target="_blank"
+                class="socialMediaLink"
+              >
+                <img src="assets/Github.svg" class="aboutGitHub" alt="GitHub" />
+              </a>
+              <a
+                href="https://www.instagram.com/luke_shivers/"
+                target="_blank"
+                class="socialMediaLink"
+              >
+                <img
+                  src="assets/Instagram.svg"
+                  class="aboutInstagram"
+                  alt="Instagram"
+                />
+              </a>
+              <a
+                href="https://codepen.io/Luke-Shivers"
+                target="_blank"
+                class="socialMediaLink"
+              >
+                <img
+                  src="assets/Codepen.svg"
+                  class="aboutCodepen"
+                  alt="Codepen"
+                />
+              </a>
+            </div>
+            <img
+              class="selfPortrait"
+              src="assets/self_portrait.svg"
+              alt="self portrait"
+            />
+          </div>
         </div>
         <div class="aboutAccent01"></div>
         <div class="aboutAccent02"></div>

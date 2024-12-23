@@ -1,227 +1,246 @@
 @import url(/styles/index.css);
 
-.verticalNav{
-    position: absolute;
-    top: 65rem;
-    left: 18rem;
-    width: 18rem;
-    height: 371.3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 2;
+.verticalNavContainer {
+  position: absolute;
+  top: 65rem;
+  width: 108.4rem;
+  height: 371.3rem;
+  display: flex;
+  justify-content: left;
+  z-index: 2;
+}
+
+.verticalNav {
+  width: 18rem;
+  height: 371.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 1800px) {
 }
 
 #hero {
-    position: absolute;
-    top: -65rem;
-    width: 1rem;
-    height: 1rem;
+  position: absolute;
+  top: -65rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 .heroScrollText {
-    position: absolute;
-    top: 8rem;
-    font-size: 1.6rem;
-    color: var(--off-white);
-    letter-spacing: 0.8rem;
-    transform: scale(0, 0);
-    user-select: none;
-    animation: scrollLoad 0.5s ease-out 4.3s forwards;
+  position: absolute;
+  top: 8rem;
+  font-size: 1.6rem;
+  color: var(--off-white);
+  letter-spacing: 0.8rem;
+  transform: scale(0, 0);
+  user-select: none;
+  animation: scrollLoad 0.5s ease-out 4.3s forwards;
 }
 
 @keyframes scrollLoad {
-    0% {transform: scale(0, 0);}
-    100% {transform: scale(1, 1);}
+  0% {
+    transform: scale(0, 0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
 }
 
 @keyframes scrollBobbing {
-    0% {transform: translate(0, 0);}
-    50% {transform: translate(0, -1rem);}
-    100% {transform: translate(0, 0);}
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -1rem);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 .scrollLineLight {
-    position: absolute;
-    top: 12.05rem;
-    width: 0.05rem;
-    height: 0;
-    background-color: var(--off-white);
-    z-index: 1;
-    transition: all 0.3s ease-out;
+  position: absolute;
+  top: 12.05rem;
+  width: 0.05rem;
+  height: 0;
+  background-color: var(--off-white);
+  z-index: 1;
+  transition: all 0.3s ease-out;
 }
 
 .aboutTextContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 27.775rem;
-    left: 0.025rem;
-    height: 8.2rem;
-    width: 18rem;
-    background-color: var(--medium-blue);
-    border-bottom: 0.025rem solid rgba(235, 236, 240, 0.25);
-    z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 27.775rem;
+  left: 0.025rem;
+  height: 8.2rem;
+  width: 18rem;
+  background-color: var(--medium-blue);
+  border-bottom: 0.025rem solid rgba(235, 236, 240, 0.25);
+  z-index: 2;
 }
 
 .aboutText {
-    font-size: 3.2rem;
-    font-weight: 700;
-    color: var(--off-white);
-    opacity: 50%;
-    letter-spacing: 0.5rem;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--off-white);
+  opacity: 50%;
+  letter-spacing: 0.5rem;
 }
 
 .aboutLineBlock {
-    position: absolute;
-    top: 36rem;
-    height: 77.4rem;
-    width: 18rem;
-    background-color: var(--medium-blue);
-    z-index: 2;
+  position: absolute;
+  top: 36rem;
+  height: 77.4rem;
+  width: 18rem;
+  background-color: var(--medium-blue);
+  z-index: 2;
 }
 
 .scrollLineDark {
-    position: absolute;
-    top: 129.96rem;
-    width: 0.1rem;
-    height: 0;
-    background-color: var(--medium-blue);
-    transition: all 0.3s ease-out;
+  position: absolute;
+  top: 129.96rem;
+  width: 0.1rem;
+  height: 0;
+  background-color: var(--medium-blue);
+  transition: all 0.3s ease-out;
 }
 
 .workTextContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 142.4rem;
-    height: 8.2rem;
-    width: 18rem;
-    background-color: var(--off-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 142.4rem;
+  height: 8.2rem;
+  width: 18rem;
+  background-color: var(--off-white);
 }
 
 .workText {
-    font-size: 3.2rem;
-    font-weight: 700;
-    letter-spacing: 0.5rem;
-    color: var(--medium-blue);
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  color: var(--medium-blue);
 }
 
 .workLineBlock {
-    position: absolute;
-    top: 160.5rem;
-    height: 118.6rem;
-    width: 18rem;
-    background-color: var(--off-white);
-    z-index: 2;
+  position: absolute;
+  top: 160.5rem;
+  height: 118.6rem;
+  width: 18rem;
+  background-color: var(--off-white);
+  z-index: 2;
 }
 
 .skillsTextContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 297.6rem;
-    height: 8.2rem;
-    width: 18rem;
-    background-color: var(--off-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 297.6rem;
+  height: 8.2rem;
+  width: 18rem;
+  background-color: var(--off-white);
 }
 
 .skillsText {
-    font-size: 3.2rem;
-    font-weight: 700;
-    letter-spacing: 0.5rem;
-    color: var(--medium-blue);
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  color: var(--medium-blue);
 }
 
 .contactLine {
-    position: absolute;
-    top: 406.86rem;
-    left: 8.95rem;
-    width: 0;
-    height: 0.1rem;
-    background-color: var(--medium-blue);
-    transition: all 0.3s ease-out;
+  position: absolute;
+  top: 406.86rem;
+  left: 8.95rem;
+  width: 0;
+  height: 0.1rem;
+  background-color: var(--medium-blue);
+  transition: all 0.3s ease-out;
 }
 
 @media screen and (max-width: 600px) {
-    .verticalNav{
-        top: 88.1rem;
-        left: 2.5rem;
-        width: 13.1rem;
-        height: 350rem;
-    }
+  .verticalNav {
+    top: 88.1rem;
+    left: 2.5rem;
+    width: 13.1rem;
+    height: 350rem;
+  }
 
-    #hero {
-        top: -88.1rem;
-    }
+  #hero {
+    top: -88.1rem;
+  }
 
-    .heroScrollText {
-        display: none;
-    }
+  .heroScrollText {
+    display: none;
+  }
 
-    .scrollLineLight {
-        width: 0.1rem;
-        top: 11.4rem;
-    }
+  .scrollLineLight {
+    width: 0.1rem;
+    top: 11.4rem;
+  }
 
-    .aboutTextContainer {
-        top: 6.25rem;
-        left: 0rem;
-        height: 5.15rem;
-        width: 13.1rem;
-        border-bottom: none;
-    }
+  .aboutTextContainer {
+    top: 6.25rem;
+    left: 0rem;
+    height: 5.15rem;
+    width: 13.1rem;
+    border-bottom: none;
+  }
 
-    .aboutText {
-        font-size: 2.4rem;
-        letter-spacing: 0.375rem;
-    }
-    
-    .aboutLineBlock {
-        top: 17.6rem;
-        height: 114.1rem;
-        width: 13.1rem;
-    }
+  .aboutText {
+    font-size: 2.4rem;
+    letter-spacing: 0.375rem;
+  }
 
-    .scrollLineDark {
-        top: 142.8rem;
-        width: 0.1rem;
-    }
-    
-    .workTextContainer {
-        top: 174.3rem;
-        height: 5.15rem;
-        width: 13.1rem;
-    }
-    
-    .workText {
-        font-size: 2.4rem;
-        letter-spacing: 0.375rem;
-    }
+  .aboutLineBlock {
+    top: 17.6rem;
+    height: 114.1rem;
+    width: 13.1rem;
+  }
 
-    .workLineBlock {
-        top: 183.9rem;
-        height: 69.5rem;
-        width: 13.1rem;
-    }
+  .scrollLineDark {
+    top: 142.8rem;
+    width: 0.1rem;
+  }
 
-    .skillsTextContainer {
-        top: 280.3rem;
-        height: 5.15rem;
-        width: 13.1rem;
-    }
-    
-    .skillsText {
-        font-size: 2.4rem;
-        letter-spacing: 0.375rem;
-    }
+  .workTextContainer {
+    top: 174.3rem;
+    height: 5.15rem;
+    width: 13.1rem;
+  }
 
-    .contactLine {
-        top: 371.2rem;
-        left: 0;
-        opacity: 0;
-    }
+  .workText {
+    font-size: 2.4rem;
+    letter-spacing: 0.375rem;
+  }
+
+  .workLineBlock {
+    top: 183.9rem;
+    height: 69.5rem;
+    width: 13.1rem;
+  }
+
+  .skillsTextContainer {
+    top: 280.3rem;
+    height: 5.15rem;
+    width: 13.1rem;
+  }
+
+  .skillsText {
+    font-size: 2.4rem;
+    letter-spacing: 0.375rem;
+  }
+
+  .contactLine {
+    top: 371.2rem;
+    left: 0;
+    opacity: 0;
+  }
 }

@@ -2,6 +2,7 @@
 
 .navbar {
   position: sticky;
+  width: 100%;
   top: 0;
   transition: top 0.5s ease;
   z-index: 999;
@@ -14,7 +15,7 @@
   height: 11rem;
   background-color: var(--off-white);
   /* background-image: var(--back-grain); */
-  background-size: 35rem auto;
+  /* background-size: 35rem auto; */
   overflow: hidden;
   padding: 0 7rem;
   font-size: 1.6rem;
@@ -25,19 +26,6 @@
 }
 
 @media screen and (max-width: 600px) {
-  .navbarContainer {
-    position: relative;
-    padding: 0;
-    width: 100%;
-    height: 9.6rem;
-    overflow: visible;
-    font-size: 2.4rem;
-    font-weight: 700;
-    color: var(--off-white);
-  }
-}
-
-@media screen and (min-width: 1560px) {
   .navbarContainer {
     position: relative;
     padding: 0;

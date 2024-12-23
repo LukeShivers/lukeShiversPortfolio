@@ -1,28 +1,48 @@
 @import url(/styles/index.css);
 
+/* 
+- Mobile:
+- Small: (1/8, 6/8, 1/8)
+- Medium: (1/10, 1/10, 6/10, 2/10)
+- Large: (1/12, 2/12, 6/12, 3/12)
+*/
+
 .mainContainer {
+  width: 100%;
   overflow: hidden;
 }
 
 .heroContainer {
-  display: flex;
   position: relative;
-}
-
-.heroLeftCol {
-  display: grid;
+  display: flex;
   background-color: var(--medium-blue);
-  grid-template-rows: repeat(4, 18rem);
-  grid-template-columns: repeat(1, 18rem);
-  user-select: none;
 }
 
-.heroRightCol {
+.developer {
   display: grid;
+  width: 126rem;
+  height: 72rem;
   background-color: var(--medium-blue);
   grid-template-rows: repeat(4, 18rem);
   grid-template-columns: repeat(7, 18rem);
   user-select: none;
+}
+
+.xlDiv {
+  width: 18rem;
+  height: 18rem;
+}
+
+@media screen and (max-width: 1800px) {
+  .xlAdjustmentDivContainer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .lgAdjustmentDivContainer {
+    display: none;
+  }
 }
 
 .gridDiv {
@@ -99,12 +119,13 @@
   transition: 0.3s;
 }
 
-.gridDivSpecial:nth-child(9) {
-  grid-area: 2 / 1 / 4 / 2;
+.bulletContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--off-white);
+  width: 18rem;
+  height: 36rem;
   overflow: hidden;
   background-size: 35rem auto;
   border: 0.025rem solid var(--medium-blue);
@@ -218,8 +239,8 @@
   bottom: 15rem;
 }
 
-.gridDivSpecial:nth-child(28) {
-  grid-area: 4 / 1 / 4 / 4;
+.gridDivSpecial {
+  grid-area: 4 / 1 / 4 / 3;
   display: flex;
   background-color: var(--medium-blue);
   overflow: visible;
