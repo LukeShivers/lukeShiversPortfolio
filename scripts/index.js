@@ -3,6 +3,7 @@ export let rootFontSize = parseFloat(
 );
 
 console.log(window.innerWidth);
+console.log(window.screen.width);
 
 export const navbarButton = document.querySelector(".navbarButton");
 export const arrow = document.querySelector(".buttonArrow");

@@ -44,7 +44,7 @@
   opacity: 0;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-device-width: 600px) {
   .workDiv {
     height: 146.5rem;
     padding-top: 0;
@@ -153,7 +153,7 @@
   white-space: nowrap;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-device-width: 600px) {
   .snakeOverview {
     display: flex;
     flex-direction: column;
@@ -288,7 +288,6 @@
 }
 
 #exitPageSvg {
-  display: none;
   width: 1.8rem;
   height: 1.805rem;
 }
@@ -298,7 +297,7 @@
   height: 1.863rem;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-device-width: 600px) {
   .snakeOverviewRight {
     align-self: flex-end;
     right: 0;

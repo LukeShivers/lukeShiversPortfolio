@@ -35,19 +35,19 @@ html {
   font-size: calc(100vw / 144);
 }
 
-@media screen and (max-width: 600px) {
+@media (max-device-width: 600px) {
   html {
     font-size: calc(100vw / 39.3);
   }
 }
 
-@media screen and (min-width: 1500px) {
+@media (min-device-width: 1500px) {
   html {
     font-size: calc(100vw / 180);
   }
 }
 
-@media screen and (min-width: 1800px) {
+@media (min-device-width: 1920px) {
   html {
     font-size: calc(100vw / 216);
   }

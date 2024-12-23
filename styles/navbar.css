@@ -25,7 +25,7 @@
   transition: 0.3s ease-out;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-device-width: 600px) {
   .navbarContainer {
     position: relative;
     padding: 0;
@@ -72,11 +72,16 @@
   height: 2.6rem;
 }
 
+.navbarLogoImg {
+  width: 5.9rem;
+  height: 5.9rem;
+}
+
 .navbarLogo:hover {
   translate: 0 -0.5rem;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-device-width: 600px) {
   .navbarLogo {
     margin-left: 2.5rem;
   }
@@ -87,7 +92,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-device-width: 600px) {
   .navbarToggle {
     opacity: 0;
     transition: all 0.5s ease-out;
@@ -191,7 +196,7 @@
   translate: 0 -0.5rem;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-device-width: 600px) {
   .navbarMenu {
     position: absolute;
     display: flex;
@@ -233,7 +238,7 @@
   color: var(--off-white);
 }
 
-@media screen and (min-width: 600px) {
+@media (max-device-width: 600px) {
   .navbarLinksText::before {
     content: attr(data-hover);
     color: transparent;
@@ -258,7 +263,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-device-width: 600px) {
   .navbarLinksText {
     color: var(--off-white);
     padding: 0;
@@ -314,7 +319,7 @@
   transition: all 0.3s ease-out;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-device-width: 600px) {
   .navbarButton {
     width: 34.3rem;
     height: 8.2rem;

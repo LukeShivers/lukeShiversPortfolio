@@ -12,7 +12,7 @@
   display: none;
 }
 
-@media screen and (max-width: 660px) {
+@media (max-device-width: 600px) {
   .creativeMain {
     display: none;
   }
