@@ -2,13 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 /*
-    Black -- 900
-    Extrabold -- 800
-    Bold -- 700
-    Semibold -- 600
-    Medium -- 500
-    Regular -- 400
-    Light -- 300
+  Black -- 900
+  Extrabold -- 800
+  Bold -- 700
+  Semibold -- 600
+  Medium -- 500
+  Regular -- 400
+  Light -- 300
 */
 
 *,
@@ -31,6 +31,15 @@
   --back-grain: url(assets/back__grain.png);
 }
 
+/* 
+- 0-600 : Mobile view
+- 600-768 : Tablet view
+- 640-1440 : Small desktop
+- 1440-1800: Medium desktop / laptop
+- 1800-2160: Large desktop
+- 2160 + : Xl desktop
+*/
+
 html {
   font-size: calc(100vw / 144);
 }
@@ -47,7 +56,7 @@ html {
   }
 }
 
-@media (min-device-width: 1920px) {
+@media (min-device-width: 1800px) {
   html {
     font-size: calc(100vw / 216);
   }
@@ -58,14 +67,3 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
-/* 
-1. Get screen width and divide by 180px
-
-- 0-600 : Mobile view
-- 600-768 : Tablet view
-- 640-1440 : Small desktop
-- 1440-1800: Medium desktop / laptop
-- 1800-2160: Large desktop
-- 2160 + : Xl desktop
-*/

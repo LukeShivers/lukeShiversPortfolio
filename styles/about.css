@@ -14,7 +14,7 @@
   content: "";
   position: absolute;
   display: block;
-  top: 57rem;
+  top: 55.75rem;
   left: -20rem;
   width: 200vw;
   height: 50rem;
@@ -40,12 +40,33 @@
   background-color: var(--medium-blue);
 }
 
+.lg {
+  display: none;
+}
+
+@media (min-device-width: 1500px) {
+  .LongAboutDivSpecial {
+    display: flex;
+    width: 72rem;
+  }
+
+  .lg {
+    display: flex;
+  }
+}
+
+.xl {
+  display: none;
+}
+
 @media (min-device-width: 1800px) {
   .LongAboutDivSpecial {
     display: flex;
     width: 90rem;
-    height: 18rem;
-    background-color: var(--medium-blue);
+  }
+
+  .xl {
+    display: flex;
   }
 }
 
@@ -65,23 +86,11 @@
   height: 18rem;
 }
 
-.aboutDiv:nth-child(2) {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
 .blueGridDiv {
   width: 18rem;
   height: 18rem;
   background-color: var(--medium-blue);
   border: 0.05rem solid var(--off-white);
-}
-
-@media (max-device-width: 600px) {
-  .aboutGrid {
-    display: none;
-  }
 }
 
 .aboutMain {
@@ -112,6 +121,10 @@
 }
 
 @media (max-device-width: 600px) {
+  .aboutGrid {
+    display: none;
+  }
+
   .aboutContainer {
     display: flex;
     flex-direction: column;
@@ -132,17 +145,19 @@
     z-index: 1;
   }
 
+  .aboutMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+
   .aboutAccent01 {
     top: 16.2rem;
   }
 
   .aboutAccent02 {
     top: 79rem;
-  }
-
-  .aboutAccent03 {
-    height: 141.3rem;
-    left: 2.5rem;
   }
 
   .aboutAccent04 {
@@ -179,6 +194,7 @@
 }
 
 .dottedLine01 {
+  position: absolute;
   width: 50rem;
   height: 0.2rem;
   left: 34.6rem;
@@ -363,6 +379,7 @@
 
 @media (max-device-width: 600px) {
   .leftColWrapper {
+    position: relative;
     display: flex;
     justify-content: center;
     top: 16.2rem;
@@ -394,7 +411,7 @@
   .dottedLine03 {
     width: 46.4rem;
     height: 0.2rem;
-    left: -20.95rem;
+    left: -20.4rem;
     top: 39.75rem;
   }
 
@@ -416,7 +433,7 @@
     height: 53.9rem;
     background-color: var(--light-blue);
     top: 4.4rem;
-    left: 2.5rem;
+    left: 2.8rem;
   }
 
   .greetingContainer {
@@ -501,13 +518,6 @@
   }
 }
 
-.rightColWrapper {
-  display: flex;
-  justify-content: center;
-  height: 68.4rem;
-  z-index: 2;
-}
-
 .aboutAccent03 {
   background-color: var(--off-white);
   opacity: 25%;
@@ -574,16 +584,22 @@
   transform-origin: bottom;
 }
 
+.rightColWrapper {
+  display: flex;
+  justify-content: center;
+  height: 68.4rem;
+  z-index: 2;
+}
+
 @media (max-device-width: 600px) {
   .rightColWrapper {
+    position: relative;
+    top: 16.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 34rem;
-    height: 41.2rem;
-    top: 85.6rem;
-    left: 2.5rem;
+    height: 40.884rem;
   }
 
   .aboutSocialMediaContainer {
@@ -592,7 +608,7 @@
     justify-content: space-between;
     position: absolute;
     width: 22.4rem;
-    top: -1rem;
+    top: 6rem;
   }
 
   .socialMediaLink:hover {
@@ -601,8 +617,24 @@
   }
 
   .selfPortrait {
-    top: 7.8rem;
+    position: relative;
+    top: 15.8rem;
     width: 34rem;
     height: 33.61rem;
+  }
+
+  .aboutAccent03 {
+    position: absolute;
+    width: 100vw;
+    height: 0.025rem;
+    top: 13.1rem;
+  }
+
+  .aboutAccent04 {
+    position: absolute;
+    width: 100vw;
+    height: 0.025rem;
+    top: 49.153rem;
+    right: initial;
   }
 }

@@ -33,22 +33,22 @@
   height: 18rem;
 }
 
-.xlAdjustmentDivContainer {
+.lgAdjustmentDivContainer {
   display: none;
 }
 
-.lgAdjustmentDivContainer {
+@media (min-device-width: 1500px) {
+  .lgAdjustmentDivContainer {
+    display: block;
+  }
+}
+
+.xlAdjustmentDivContainer {
   display: none;
 }
 
 @media (min-device-width: 1800px) {
   .xlAdjustmentDivContainer {
-    display: block;
-  }
-}
-
-@media (min-device-width: 1500px) {
-  .lgAdjustmentDivContainer {
     display: block;
   }
 }
@@ -80,6 +80,7 @@
 
 .gridDiv .gridText {
   font-size: 1.2rem;
+  padding: 0.5rem 1rem;
   color: var(--medium-blue);
   opacity: 0;
   animation: gridTextLoad 0.3s ease-out 4.3s forwards;
@@ -112,20 +113,28 @@
   bottom: 44rem;
 }
 
-.gridDiv:nth-child(5) .gridText {
+.gridDiv:nth-child(4) .gridText {
   position: absolute;
   top: 13rem;
   right: 1.9rem;
 }
 
-.gridDiv:nth-child(7) {
+.gridDiv:nth-child(6) {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.gridDiv:nth-child(7) .gridText {
+.gridDiv:nth-child(18) .gridText {
   position: absolute;
+  left: 2.5rem;
   top: 6.6rem;
+}
+
+.gridSquareText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .smoothTransition {
@@ -315,9 +324,38 @@
 
 @media (max-device-width: 600px) {
   .heroContainer {
+    height: 78.6rem;
+    border-bottom: 0.025rem solid rgba(235, 236, 240, 0.25);
+  }
+
+  .heroLeft {
+    display: none;
+  }
+
+  .developer {
     display: grid;
+    width: 39.3rem;
     grid-template-rows: repeat(6, 13.1rem);
     grid-template-columns: repeat(3, 13.1rem);
+  }
+
+  .gridDiv:nth-child(3),
+  .gridDiv:nth-child(5),
+  .gridDiv:nth-child(6),
+  .gridDiv:nth-child(7),
+  .gridDiv:nth-child(15),
+  .gridDiv:nth-child(16),
+  .gridDiv:nth-child(17),
+  .gridDiv:nth-child(18),
+  .gridDiv:nth-child(19),
+  .gridDiv:nth-child(20),
+  .gridDiv:nth-child(24),
+  .desktopDiv {
+    display: none;
+  }
+
+  .mobileDiv {
+    display: flex;
   }
 
   .gridDiv h1 {
@@ -339,6 +377,7 @@
     bottom: 28.25rem;
   }
 
+  /* nth does not work across multiple containers */
   .gridDiv:nth-child(5) .gridText {
     position: absolute;
     top: 10rem;
@@ -356,7 +395,7 @@
   }
 
   #l13 {
-    bottom: 5.75rem;
+    bottom: -1rem;
   }
 
   #e21Copy {
@@ -377,25 +416,17 @@
     bottom: 11.5rem;
   }
 
+  #e21 {
+    bottom: 2rem;
+  }
+
   #r22 {
     left: 3rem;
     bottom: 6.5rem;
   }
 
-  .gridDiv:nth-child(1),
-  .gridDiv:nth-child(4),
-  .gridDiv:nth-child(6),
-  .gridDiv:nth-child(7),
-  .gridDiv:nth-child(8) {
+  .gridDivSpecial {
     display: none;
-  }
-
-  .gridDivSpecial:nth-child(9) {
-    display: none;
-  }
-
-  .mobileDiv {
-    display: flex;
   }
 
   .gridDiv:nth-child(13) {
@@ -404,24 +435,21 @@
     align-items: center;
   }
 
-  .gridDiv:nth-child(17),
-  .gridDiv:nth-child(18),
-  .gridDiv:nth-child(19),
-  .gridDiv:nth-child(20),
-  .gridDiv:nth-child(21),
-  .gridDiv:nth-child(22),
-  .gridDiv:nth-child(24),
-  .gridDiv:nth-child(31),
-  .gridDiv:nth-child(32),
-  .gridDiv:nth-child(33) {
-    display: none;
-  }
-
   .gridDivSpecial:nth-child(28) {
     display: none;
   }
 
   .accentLine {
-    display: none;
+    top: 78.6rem;
+    height: 150rem;
+  }
+
+  .heroAccent01 {
+    left: 2.5rem;
+  }
+
+  .heroAccent02 {
+    left: initial;
+    right: 2.5rem;
   }
 }

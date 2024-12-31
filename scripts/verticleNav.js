@@ -92,19 +92,32 @@ function aboutHeadingIntersectionObserver(obj) {
 }
 aboutHeadingIntersectionObserver(aboutHeadingTextLoad);
 
+function degreesToRadians(degrees) {
+  return degrees * (Math.PI / 180);
+}
+
+function lightLineHeight() {
+  const ajdacent = (window.innerWidth / rootFontSize - 108.4) / 2 + 9;
+  const angleInRadians = degreesToRadians(6);
+  const opposite = Math.tan(angleInRadians) * ajdacent + 113.75;
+  return opposite;
+}
+const oppositeValue = lightLineHeight();
+console.log(oppositeValue);
+
 const toWorkLineLoad = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.intersectionRatio >= 1) {
       let lightLength;
       window.innerWidth <= 600
         ? (lightLength = "131.75rem")
-        : (lightLength = "117.875rem");
+        : (lightLength = `${oppositeValue}rem`);
       scrollLineLight.style.height = lightLength;
       setTimeout(() => {
         let darkLength;
         window.innerWidth <= 600
-          ? (darkLength = "30.6rem")
-          : (darkLength = "16.45rem");
+          ? (darkLength = "32.6rem")
+          : (darkLength = "18.45rem");
         scrollLineDark.style.height = darkLength;
       }, 300);
       toWorkLineLoad.unobserve(entry.target);
@@ -134,7 +147,7 @@ function workCustomIntersectionObserver(obj) {
             snakeImg.style.animation = "snakeImgLoad 0.5s ease-out forwards";
           }, 250);
           setTimeout(() => {
-            scrollLineDark.style.height = "95rem";
+            scrollLineDark.style.height = "97rem";
           }, 500);
           targetObjectObserver.unobserve(entry.target);
         }
@@ -177,9 +190,9 @@ const toSkillsLineLoad = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.intersectionRatio >= 1) {
       if (window.innerWidth <= 600) {
-        scrollLineDark.style.height = "136.6rem";
+        scrollLineDark.style.height = "140.6rem";
       } else {
-        scrollLineDark.style.height = "171.74rem";
+        scrollLineDark.style.height = "17.74rem";
       }
       toSkillsLineLoad.unobserve(entry.target);
     }
@@ -210,9 +223,9 @@ function skillsCustomIntersectionObserver(obj) {
           }, 250);
           setTimeout(() => {
             if (window.innerWidth <= 600) {
-              scrollLineDark.style.height = "148.3rem";
+              scrollLineDark.style.height = "150.3rem";
             } else {
-              scrollLineDark.style.height = "277rem";
+              scrollLineDark.style.height = "279rem";
             }
           }, 500);
           setTimeout(() => {

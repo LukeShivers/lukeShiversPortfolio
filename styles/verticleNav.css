@@ -100,7 +100,7 @@
 
 .scrollLineDark {
   position: absolute;
-  top: 129.96rem;
+  top: 127.96rem;
   width: 0.1rem;
   height: 0;
   background-color: var(--medium-blue);
@@ -163,8 +163,14 @@
 }
 
 @media screen and (max-width: 600px) {
+  .verticalNavContainer {
+    position: absolute;
+    top: 88.127rem;
+    width: 100vw;
+  }
+
   .verticalNav {
-    top: 88.1rem;
+    position: relative;
     left: 2.5rem;
     width: 13.1rem;
     height: 350rem;
@@ -203,7 +209,7 @@
   }
 
   .scrollLineDark {
-    top: 142.8rem;
+    top: 140.8rem;
     width: 0.1rem;
   }
 
